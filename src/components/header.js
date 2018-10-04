@@ -1,7 +1,9 @@
 import React from "react"
 
+import headerStyles from "./header.module.scss"
+
 const Header = () => (
-    <header className="header">
+    <header className={headerStyles.header}>
         <div className="wrapper">
             <h1>Site Title</h1>
             <ul class="navigation">

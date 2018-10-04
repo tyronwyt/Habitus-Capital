@@ -1,0 +1,31 @@
+.header {
+    background: #000;
+    height: 100px;
+    color: #fff;
+    width: 100%;
+}
+
+.header h1 {
+    display: inline;
+}
+
+.header .wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.header .navigation {
+    list-style: none;
+    display: inline;
+    float: right;
+    font-family: 'Lato', sans-serif;
+}
+
+.header .navigation li {
+    display: inline;
+    margin-right: 1.5em;
+}
+
+.header .navigation li:hover {
+    color: #ba816e;
+}
