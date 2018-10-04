@@ -2,16 +2,18 @@ import React from "react"
 
 import headerStyles from "./header.module.scss"
 
+import logo from "../assets/images/HabitusCapital_Logo.svg"
+
 const Header = () => (
     <header className={headerStyles.header}>
-        <div className="wrapper">
-            <h1>Site Title</h1>
-            <ul class="navigation">
-                <li>Our Legacy</li>
-                <li>Investing</li>
-                <li>Performance</li>
-                <li>Live Updates</li>
-                <li>Contact</li>
+        <div className={headerStyles.wrapper}>
+            <a href="/" className={headerStyles.logo}><img src={logo} alt="Habitus Capital" /></a>
+            <ul>
+                <li><a href="#">Our Legacy</a></li>
+                <li><a href="#">Investing</a></li>
+                <li><a href="#">Performance</a></li>
+                <li><a href="#">Live Updates</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </header>

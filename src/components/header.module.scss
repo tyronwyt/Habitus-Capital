@@ -9,23 +9,47 @@
     display: inline;
 }
 
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header a:visited {
+    color: #fff;
+}
+
+.header a:hover {
+    color: #ba816e;
+}
+
+
 .header .wrapper {
     max-width: 60%;
     margin: 0 auto;
+    padding: 25px 0;
 }
 
-.header .navigation {
+.header ul {
     list-style: none;
     display: inline;
     float: right;
     font-family: 'Lato', sans-serif;
 }
 
-.header .navigation li {
+.header ul li {
     display: inline;
     margin-right: 1.5em;
+    position: relative;
 }
 
-.header .navigation li:hover {
+.header ul li:hover, {
     color: #ba816e;
+}
+
+.logo img{
+    width: 100px;
+    transition: all .1s;
+}
+.logo img:hover {
+    transform: scale(1.1);
 }
