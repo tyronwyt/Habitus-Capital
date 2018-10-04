@@ -1,0 +1,21 @@
+.footer {
+    background: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.leftCol {
+    display: inline-block;
+}
+
+.logo {
+    width: 150px;
+    float: right;
+    filter: grayscale(100%);
+}
