@@ -5,17 +5,45 @@
 }
 
 .wrapper {
-    max-width: 60%;
+    display: flex;
+    align-items: center;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 25px;
 }
 
-.leftCol {
+.blurb {
     display: inline-block;
+    text-align: left;
+    flex-basis: 100%;
 }
 
 .logo {
-    width: 150px;
-    float: right;
-    filter: grayscale(100%);
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 80%;
+    }
+
+    .blurb {
+        flex-basis: 70%;
+    }
+
+    .logo {
+        display: inline;
+        flex-grow: 1;
+        text-align: right;
+    }
+    
+    .logo img {
+        width: 150px;
+        filter: grayscale(100%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 60%;
+    }
 }
