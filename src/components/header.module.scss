@@ -3,6 +3,10 @@
     height: 100px;
     color: #fff;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all .2s;
 }
 
 .header h1 {
@@ -28,6 +32,22 @@
     padding: 25px 0;
     text-align: center;
     display: flex;
+    transition: all .2s;
+}
+
+// onScroll resize header
+
+.header[data-scroll="true"] {
+    height: 50px;
+    overflow: hidden;
+}
+
+.header[data-scroll="true"] .wrapper {
+    padding-top: 0px;
+}
+
+.header[data-scroll="true"] .logo {
+    display: none;
 }
 
 .logo {

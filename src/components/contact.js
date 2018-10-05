@@ -5,7 +5,7 @@ import mountains from "../assets/images/mountains_960x350.jpg"
 
 const Contact = () => (
     <section className={contactStyles.contact}>
-        <h2 className={contactStyles.title}>Contact Us</h2>
+        <h2 className={contactStyles.title} id="contact">Contact Us</h2>
         <div className={contactStyles.row}>
             <div className={`${contactStyles.block} ${contactStyles.black} ${contactStyles.left}`}>
                 <h3>Career Opportunities</h3>
