@@ -4,6 +4,7 @@
 }
 
 .title {
+    max-width: 80%;
     margin: 0 auto 2em auto;
 }
 
@@ -39,18 +40,4 @@
     .block.right {
         padding-right: 10%;
     }
-}
-
-@media (min-width: 1300px) {
-    .title {
-        max-width: 60%;
-    }
-    .block.left {
-        padding-left: 20%;
-    }
-
-    .block.right {
-        padding-right: 20%;
-    }
-    
 }
