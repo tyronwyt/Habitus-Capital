@@ -17,7 +17,7 @@ const Header = () => (
                     <li><a href="#">Our Legacy</a></li>
                     <li><a href="#investing">Investing</a></li>
                     <li><a href="#performance">Performance</a></li>
-                    <li><a href="#live-updates">Live Updates</a></li>
+                    <li><a href="#updates">Live Updates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>

@@ -1,0 +1,114 @@
+.update {
+    width: 100%;
+    margin: 0 auto 3em auto;
+}
+
+.title {
+    max-width: 80%;
+    margin: 0 auto 2em auto;
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px 5px 0px (rgba(0,0,0,0.5));
+}
+
+.date {
+    color: #ba816e;
+    display: inline-block;
+    font-size: 2em;
+    order: 2;
+}
+
+.date span {
+    display: block;
+    display: inline-block;
+}
+
+.date .day {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    display: inline;
+}
+
+.date .month,
+.date .year {
+    font-family: 'Late', sans-serif;
+    font-size: .6em;
+}
+
+.date .month {
+    margin-right: 5px;
+}
+
+.postContainer .image {
+    margin-bottom: 15px;
+    min-width: 100%;
+    max-width: 100%;
+    order: 1;
+}
+
+.postContainer .image img{
+    width: 100%;
+}
+
+.article {
+    order: 3;
+}
+
+.postTitle {
+    display: inline-block;
+    margin: 0px; 
+}
+
+.button {
+    background: #ba816e;
+    padding: 10px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button:hover {
+    background: #46b299;
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+    .postContainer {
+        flex-direction: row;
+    }
+
+    .date {
+        order: 1;
+        flex-basis: 5%;
+    }
+
+    .date span {
+        display: block;
+    }
+
+    .postContainer .image {
+        order: 2;
+        margin: 0 15px;
+        width: 150px;
+        min-width: 150px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .title {
+        max-width: 80%;
+    }
+
+}
+
+@media (min-width: 1300px) {
+}

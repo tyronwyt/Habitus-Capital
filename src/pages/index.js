@@ -5,44 +5,16 @@ import Layout from "../components/layout"
 import Legacy from "../components/legacy"
 import Contact from "../components/contact"
 import Investing from "../components/investing"
-// import Update from "../components/update"
+import Update from "../components/update"
 
 
 const IndexPage = ({ data }) => (
     <Layout>
         <Legacy />
         <Investing />
-        {/* {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <h3>
-              {node.frontmatter.title}{" "}
-              <span>
-                — {node.frontmatter.date}
-              </span>
-            </h3>
-            <p>{node.excerpt}</p>
-          </div>
-        ))} */}
+        <Update />
         <Contact />
     </Layout>
 )
 
 export default IndexPage
-
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`
