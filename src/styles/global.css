@@ -22,3 +22,17 @@ h2, h3 {
 #logo-sml {
     display: none;
 }
+
+#title-element {
+    position: relative;
+}
+
+#title-element div {
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+#title-element #top {
+    top: -150px;
+}

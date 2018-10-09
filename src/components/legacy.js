@@ -5,8 +5,11 @@ import aloe from "../assets/images/aloe_960x350.png"
 import chameleon from "../assets/images/chameleon_960x350.png"
 
 const Legacy = () => (
-    <section className={legacyStyles.legacy}>
-        <h2 className={legacyStyles.title}>Our Culture</h2>
+    <section className={legacyStyles.legacy} id="top">
+        <div id="title-element">
+            <div id="top"/>
+            <h2 className={legacyStyles.title}>Our Culture</h2>
+        </div>
         <div className={legacyStyles.video}>
                 <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>

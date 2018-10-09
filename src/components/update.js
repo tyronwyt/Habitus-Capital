@@ -31,7 +31,10 @@ const Update = () => (
 }
     render={data => (
         <section className={updateStyles.update}>
-            <h2 className={updateStyles.title} id="updates">Live Updates</h2>
+          <div id="title-element">
+            <div id="updates"/>
+            <h2 className={updateStyles.title}>Live Updates</h2>
+          </div>
             {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id} className={updateStyles.postContainer}>
             <div className={updateStyles.date}>

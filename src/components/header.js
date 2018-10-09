@@ -6,7 +6,15 @@ import headerStyles from "./header.module.scss"
 import logo from "../assets/images/HabitusCapital_Logo.svg"
 import logo_sml from "../assets/images/HabitusCapital_Logo_sml.svg"
 
+// Smooth scroll effect
+function scrollTo(position, e) {
+    e.preventDefault();
 
+    document.querySelector(position).scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+    })
+}
 
 const Header = () => (
     <header className={headerStyles.header} id="header">
@@ -19,11 +27,13 @@ const Header = () => (
             </div>
             <div className={headerStyles.nav}>
                 <ul>
-                    <li><Link to="/#">Our Legacy</Link></li>
-                    <li><Link to="/#investing">Investing</Link></li>
-                    <li><Link to="/#performance">Performance</Link></li>
-                    <li><Link to="/#updates">Live Updates</Link></li>
-                    <li><Link to="/#contact">Contact</Link></li>
+                    <li><Link to="/#" onClick={(e) => {scrollTo('#top', e)}}>
+                            Our Legacy</Link>
+                    </li>
+                    <li><Link to="/#investing" onClick={(e) => {scrollTo('#investing', e)}}>Investing</Link></li>
+                    <li><Link to="/#performance" onClick={(e) => {scrollTo('#performance', e)}}>Performance</Link></li>
+                    <li><Link to="/#updates" onClick={(e) => {scrollTo('#updates', e)}}>Live Updates</Link></li>
+                    <li><Link to="/#contact" onClick={(e) => {scrollTo('#contact', e)}}>Contact</Link></li>
                 </ul>
             </div>
         </div>

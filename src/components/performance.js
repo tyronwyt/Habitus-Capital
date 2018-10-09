@@ -20,23 +20,26 @@ const Performance = () => (
 }
     render={data => (
         <section className={performanceStyles.performance}>
-        <h2 className={performanceStyles.title} id="performance">Performance</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Label</th>
-                                <th>Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {data.allTestCsv.edges.map(({ node }, index) => (
-                                <tr key={index}>
-                                    <td>{node.letter}</td>
-                                    <td>{node.value}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+        <div id="title-element">
+            <div id="performance"/>
+            <h2 className={performanceStyles.title}>Performance</h2>
+        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {data.allTestCsv.edges.map(({ node }, index) => (
+                        <tr key={index}>
+                            <td>{node.letter}</td>
+                            <td>{node.value}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </section>
     )}
     />
