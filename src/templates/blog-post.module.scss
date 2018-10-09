@@ -44,3 +44,9 @@
 .backButton:hover {
     color: #ba816e;
 }
+
+@media (min-width: 768px) {
+    .blog {
+        width: 60%;
+    }
+} 

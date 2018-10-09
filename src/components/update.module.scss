@@ -102,6 +102,15 @@
         width: 150px;
         min-width: 150px;
     }
+
+    .article {
+        position: relative;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 
