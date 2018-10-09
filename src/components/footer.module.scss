@@ -21,6 +21,21 @@
     display: none;
 }
 
+.social {
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
+.social a img{
+    width: 30px;
+    height: 35px;  
+}
+
+.social a:not(:last-of-type) {
+    margin-right: 15px;
+}
+
 @media (min-width: 768px) {
     .wrapper {
         max-width: 80%;
