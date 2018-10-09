@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import headerStyles from "./header.module.scss"
 
@@ -14,11 +15,11 @@ const Header = () => (
             </div>
             <div className={headerStyles.nav}>
                 <ul>
-                    <li><a href="#">Our Legacy</a></li>
-                    <li><a href="#investing">Investing</a></li>
-                    <li><a href="#performance">Performance</a></li>
-                    <li><a href="#updates">Live Updates</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><Link to="/#">Our Legacy</Link></li>
+                    <li><Link to="/#investing">Investing</Link></li>
+                    <li><Link to="/#performance">Performance</Link></li>
+                    <li><Link to="/#updates">Live Updates</Link></li>
+                    <li><Link to="/#contact">Contact</Link></li>
                 </ul>
             </div>
         </div>

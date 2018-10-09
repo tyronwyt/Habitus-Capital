@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 
 import updateStyles from "./update.module.scss"
 
@@ -18,6 +18,9 @@ const Update = () => (
               month
               year
               image
+            }
+            fields {
+                slug
             }
             excerpt
           }
@@ -44,7 +47,12 @@ const Update = () => (
                 {node.frontmatter.title}
                 </h3>
                 <p>{node.excerpt}</p>
-                <div className={updateStyles.button}><strong>Read More</strong></div>
+                
+                <Link
+                to={node.fields.slug} className={updateStyles.button}>
+                    <strong>Read More</strong>
+                </Link>
+                
             </div>
           </div>
         ))}

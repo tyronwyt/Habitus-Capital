@@ -1,0 +1,46 @@
+.blog {
+    width: 80%;
+    margin: 0 auto 3em auto;
+}
+
+.title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.date {
+    color: #ba816e;
+    display: block;
+    font-size: 1.5em;
+    order: 2;
+    margin-bottom: 1em;
+}
+
+.date span {
+    display: block;
+    display: inline-block;
+}
+
+.date .day {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    display: inline;
+}
+
+.date .month,
+.date .year {
+    font-family: 'Late', sans-serif;
+    font-size: .6em;
+}
+
+.date .month {
+    margin-right: 5px;
+}
+
+.backButton {
+    color: #000;
+}
+
+.backButton:hover {
+    color: #ba816e;
+}
