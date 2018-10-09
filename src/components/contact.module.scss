@@ -25,6 +25,26 @@
     color: #fff;
 }
 
+.social a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.social p {
+    margin-bottom: .5em;
+}
+
+.social a:hover {
+    color: #ba816e;
+}
+
+.social img {
+    width: 35px;
+    margin-right: 15px;
+}
+
 @media (min-width: 768px) {
     .title {
         max-width: 80%;
