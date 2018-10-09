@@ -46,8 +46,8 @@
     padding-top: 0px;
 }
 
-.header[data-scroll="true"] .logo {
-    display: none;
+.header[data-scroll="true"] .logo img {
+    max-width: 50px;
 }
 
 .logo {
@@ -73,6 +73,7 @@
     transition: all .1s;
     margin: 0 auto;
 }
+
 .logo img:hover {
     transform: scale(1.1);
 }

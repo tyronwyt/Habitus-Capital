@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 
 import logo from "../assets/images/HabitusCapital_Logo.svg"
+import logo_sml from "../assets/images/HabitusCapital_Logo_sml.svg"
 
 
 
@@ -11,7 +12,10 @@ const Header = () => (
     <header className={headerStyles.header} id="header">
         <div className={headerStyles.wrapper}>
             <div className={headerStyles.logo}>
-                <a href="/" className={headerStyles.logo}><img src={logo} alt="Habitus Capital" /></a>
+                <Link to="/">
+                    <img id="logo" src={logo} alt="Habitus Capital" />
+                    <img id="logo-sml" src={logo_sml} alt="Habitus Capital" />
+                </Link>
             </div>
             <div className={headerStyles.nav}>
                 <ul>
