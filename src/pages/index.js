@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 
+import "isomorphic-fetch"
+
 import Layout from "../components/layout"
 import Legacy from "../components/legacy"
 import Contact from "../components/contact"
