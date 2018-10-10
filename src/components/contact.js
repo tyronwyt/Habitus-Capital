@@ -2,9 +2,9 @@ import React from "react"
 
 import contactStyles from "./contact.module.scss"
 import mountains from "../assets/images/mountains_960x350.jpg"
-import twitter from "../assets/images/twitter.svg"
-import youtube from "../assets/images/youtube.svg"
-import linkedin from "../assets/images/linkedin.svg"
+// import twitter from "../assets/images/twitter.svg"
+// import youtube from "../assets/images/youtube.svg"
+// import linkedin from "../assets/images/linkedin.svg"
 
 const Contact = () => (
     <section className={contactStyles.contact}>
@@ -45,16 +45,16 @@ const Contact = () => (
             <div className={`${contactStyles.block} ${contactStyles.right} ${contactStyles.social}`}>
                 <h3>Social Media</h3>
                 <a href="https://twitter.com/HabitusCapital">
-                    <img src={twitter} alt="Twitter" align="left"/>
+                    {/* <img src={twitter} alt="Twitter" align="left"/> */}
                     <p>@habituscapital<br/>
                     #HabitusInvesting</p>
                 </a>
                 <a href="#">
-                <img src={youtube} alt="Youtube" align="left"/>
+                {/* <img src={youtube} alt="Youtube" align="left"/> */}
                     <p>Habitus Capital</p>
                 </a>
                 <a href="#">
-                <img src={linkedin} alt="Linked In" align="left"/>
+                {/* <img src={linkedin} alt="Linked In" align="left"/> */}
                     <p>Habitus Capital</p>
                 </a>
             </div>
