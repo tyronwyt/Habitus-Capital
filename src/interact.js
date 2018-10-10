@@ -13,7 +13,7 @@ document.onreadystatechange = () => {
       const header = document.getElementById("header");
       const logo = document.getElementById("logo");
       const logoSml = document.getElementById("logo-sml");
-      if (state == 'expand') {
+      if (state === 'expand') {
         header.setAttribute('data-scroll', 'true');
         logo.setAttribute('style', 'display:none');
         logoSml.setAttribute('style', 'display:block');

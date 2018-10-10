@@ -32,10 +32,10 @@ const Footer = () => (
                         <a href="https://twitter.com/HabitusCapital">
                             <img src={twitter} alt="Twitter"/>
                         </a>
-                        <a href="#">
+                        <a href="https://youtube.com">
                             <img src={youtube} alt="Youtube"/>
                         </a>
-                        <a href="#">
+                        <a href="https://linkedin.com">
                             <img src={linkedin} alt="Linkedin"/>
                         </a>
                     </div>

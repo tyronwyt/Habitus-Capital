@@ -7,3 +7,32 @@
     max-width: 80%;
     margin: 0 auto 2em auto;
 }
+
+.tabList {
+    width: 60%;
+    list-style: none;
+    margin: 0 auto 10px auto;
+    padding: 0;
+}
+
+.selected {
+    color: #ba816e;
+}
+
+.tabList li {
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tabContainer {
+    width: 60%;
+    padding: 15px;
+    box-shadow: 2px 2px 5px 0px (rgba(0,0,0,0.5));
+    margin: 0 auto;
+}
+
+.chart {
+    max-width: 100%;
+    margin: 0 auto;
+}

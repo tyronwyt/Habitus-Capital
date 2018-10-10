@@ -11,7 +11,7 @@ const Legacy = () => (
             <h2 className={legacyStyles.title}>Our Culture</h2>
         </div>
         <div className={legacyStyles.video}>
-                <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="Placeholder video"></iframe>
         </div>
         <div className={legacyStyles.row}>
             <div className={`${legacyStyles.block} ${legacyStyles.black} ${legacyStyles.left}`}>
