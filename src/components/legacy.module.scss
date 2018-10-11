@@ -5,7 +5,7 @@
 
 .title {
     max-width: 80%;
-    margin: 0 auto 2em auto;
+    margin: 2em auto;
 }
 
 .row {
@@ -81,6 +81,29 @@
     font-weight: 400;
 }
 
+.slideContent {
+    max-width: 70%;
+    margin: 80px auto 0 auto;
+}
+
+.sliderTitle {
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    margin: 0 auto;
+}
+
+.tense {
+    color: #ba816e;
+    border-bottom: 3px solid #ba816e;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    margin: 0 auto;
+}
+
+.legacy canvas {
+    display: none;
+}
+
 @media (min-width: 411px) {
     .video iframe {
         max-width: 80%;
@@ -107,6 +130,28 @@
     .video iframe {
         max-width: 80%;
         height: 300px;
+    }
+
+    .slideContent {
+        margin-top: 200px;
+        max-width: 30%;
+    }
+
+    .sliderTitle {
+        font-size: 3em;
+        // max-width: 500px;
+    }
+
+    .slideContent.left {
+        margin-left: 200px;
+    }
+
+    .slideContent.right {
+        margin-right: 200px;
+    }
+
+    .legacy canvas {
+        display: block;
     }
 }
 

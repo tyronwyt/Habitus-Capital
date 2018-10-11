@@ -1,15 +1,102 @@
 import React from "react"
 
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import Particles from 'react-particles-js';
+
 import legacyStyles from "./legacy.module.scss"
 import aloe from "../assets/images/aloe_960x350.png"
 import chameleon from "../assets/images/chameleon_960x350.png"
+import dandelion from "../assets/images/dandelion.jpg"
+import glassBall from "../assets/images/glassBall.jpg"
+import bullBear from "../assets/images/bullBear.jpg"
+import trees from "../assets/images/trees.jpg"
+
+const particleParams = {
+    particles: {
+        number: {
+            value: 50,
+            density: {
+            enable: true,
+            value_area: 800
+            }
+        },
+        color: {
+            value: "#ffffff"
+        },
+        shape: {
+            type: "circle",
+            stroke: {
+            width: 0,
+            color: "#000000"
+            },
+            polygon: {
+            nb_sides: 5
+            }
+        },  
+        line_linked: {
+            shadow: {
+                enable: true,
+                color: "#fff",
+                blur: 5
+            }
+        },
+    },
+    retina_detect: true,
+    
+
+}
+
+const content = [
+    {
+        title: 'We Invest in; our culture, our dynamic edges and the consistent evolution of our successful habits',
+        tense: "Past",
+		class: `${legacyStyles.left}`,
+		image: `${glassBall}`,
+    },
+    {
+        title: 'You Invest in; our vision of the future',
+        tense: "Present",
+		image: `${bullBear}`,
+    },
+    {
+        title: 'Together; We achieve naturally, high-performance',
+        tense: "Future",
+        class: `${legacyStyles.right}`,
+		image: `${trees}`,
+    },
+	{
+        title: "'Keep only what remains', nourished and blessed by the sun and soils'",
+        tense: "Habitus Capital",
+		// description:
+		// 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
+		image: `${dandelion}`,
+    },
+];
 
 const Legacy = () => (
-    <section className={legacyStyles.legacy} id="top">
+    <section className={legacyStyles.legacy}>
         <div id="title-element">
-            <div id="top"/>
-            <h2 className={legacyStyles.title}>Our Culture</h2>
+            <div id="top"/>  
         </div>
+        <Slider duration="2000" autoplay="5000">
+            {content.map((item, index) => <div key={index} style={{height: "100vh", background: `url('${item.image}') no-repeat center center` }}>
+                <Particles
+                params={particleParams}
+                style={{
+                    width: '100%',
+                    position: 'absolute',
+                    height: "calc(100vh - 100px)",
+                }}
+                />
+                <div className={`${legacyStyles.slideContent} ${item.class}`}>
+                    <p className={legacyStyles.tense}>{item.tense}</p>
+                    <h2 className={legacyStyles.sliderTitle}>{item.title}</h2>
+                    <div className={legacyStyles.sliderDesc}>{item.description}</div>
+                </div>
+            </div>)}
+        </Slider>
+        <h2 className={legacyStyles.title}>Our Culture</h2>
         <div className={legacyStyles.video}>
                 <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="Placeholder video"></iframe>
         </div>
