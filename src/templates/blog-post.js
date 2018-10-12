@@ -28,7 +28,7 @@ export default ({ data }) => {
           <span className={blogStyles.month}>{splitDate(post.frontmatter.date, 'month')}</span>
           <span className={blogStyles.year}>{splitDate(post.frontmatter.date, 'year')}</span>
         </div>
-        <img href={post.frontmatter.thumbnail} alt={post.frontmatter.title}/>
+        <img src={post.frontmatter.thumbnail} alt={post.frontmatter.title}/>
         <div className={blogStyles.article} dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
