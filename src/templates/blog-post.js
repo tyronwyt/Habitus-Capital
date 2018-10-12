@@ -22,13 +22,13 @@ export default ({ data }) => {
     <Layout>
       <div className={blogStyles.blog}>
         <Link className={blogStyles.backButton} to="/#updates">&#8249; Back</Link>
-        <img href={`..${post.frontmatter.thumbnail}`} alt={post.frontmatter.title}/>
         <h1 className={blogStyles.title}>{post.frontmatter.title}</h1>
         <div className={blogStyles.date}>
           <span className={blogStyles.day}>{splitDate(post.frontmatter.date, 'day')}</span>/
           <span className={blogStyles.month}>{splitDate(post.frontmatter.date, 'month')}</span>
           <span className={blogStyles.year}>{splitDate(post.frontmatter.date, 'year')}</span>
         </div>
+        <img href={post.frontmatter.thumbnail} alt={post.frontmatter.title}/>
         <div className={blogStyles.article} dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
