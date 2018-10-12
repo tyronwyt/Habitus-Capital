@@ -1,16 +1,21 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: master
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
+  - name: posts
     label: Live Updates
-    folder: blog
+    folder: posts
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
+      - { name: day, label: Day, widget: number}
+      - { name: month, label: Month, widget: string}
+      - { name: year, label: Year, widget: number}
+      - { name: title, label: Title, widget: string }
+      - { name: thumbnail, label: Featured Image, widget: image }
       - { name: body, label: Body, widget: markdown }
