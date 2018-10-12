@@ -13,9 +13,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: date, label: Date, widget: date }
-      - { name: day, label: Day, widget: number}
-      - { name: month, label: Month, widget: string}
-      - { name: year, label: Year, widget: number}
       - { name: title, label: Title, widget: string }
       - { name: thumbnail, label: Featured Image, widget: image }
       - { name: body, label: Body, widget: markdown }
