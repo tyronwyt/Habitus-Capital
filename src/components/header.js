@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import headerStyles from "./header.module.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import logo from "../assets/images/logo_text.png"
 import flair from "../assets/images/flair.png"
@@ -37,7 +38,7 @@ const Header = () => (
                         <li><Link to="/#performance" onClick={(e) => {scrollTo('#performance', e)}} id="nav-performance">PERFORMANCE</Link></li>
                         <li><Link to="/#updates" onClick={(e) => {scrollTo('#updates', e)}} id="nav-updates">LIVE UPDATES</Link></li>
                         <li><Link to="/#contact" onClick={(e) => {scrollTo('#contact', e)}} id="nav-contact">CONTACT</Link></li>
-                        <li><Link to="#">TEAM MEMBERS</Link></li>
+                        <li><Link to="#">TEAM MEMBERS  <FontAwesomeIcon icon="lock" /></Link></li>
                     </ul>
                 </div>
             </div>
