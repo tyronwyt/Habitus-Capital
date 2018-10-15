@@ -22,7 +22,7 @@ const Header = () => (
             <div className={headerStyles.wrapper}>
                 <div className={headerStyles.logo}>
                 <Link to="/"><img id="logo" src={logo} alt="Habitus Capital" /></Link>
-                <div id="flair">
+                <div className={headerStyles.flair}>
                     <img src={flair} alt=""></img>
                 </div>
                 </div>

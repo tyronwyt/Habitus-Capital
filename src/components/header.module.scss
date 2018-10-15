@@ -26,7 +26,8 @@
 
 .header .bottom {
     height: 50px;
-    background-color: rgba($color: #000000, $alpha: 0.7)
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    display: none;
 }
 
 .header .wrapper {
@@ -49,6 +50,16 @@
 
 .logo a {
     cursor: pointer;
+}
+
+/* Navigation Flair Styles */
+
+.flair {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 39px;
+	left: 20%;
 }
 
 .nav ul {
@@ -89,8 +100,16 @@
         display: inline;
     }
 
+    .header .bottom {
+        display: block;
+    }
+
     .nav ul li {
         display: inline;
         margin-right: 1.5em;
+    }
+
+    .flair {
+        left: 15%;
     }
 }

@@ -41,16 +41,6 @@ h2, h3 {
     height: 50vh !important;
 }
 
-/* Navigation Flair Styles */
-
-#flair {
-	width: 5px;
-	height: 5px;
-	position: absolute;
-	top: 39px;
-	left: 0px;
-}
-
 @media (min-width: 768px) {
     /* Slider Styles */
     .slider {

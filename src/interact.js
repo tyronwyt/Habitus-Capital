@@ -9,13 +9,13 @@ document.onreadystatechange = () => {
 
   // Navigation scroll animation
   function navigationScroll() {
-    const flair = document.getElementById("flair");
+    // const flair = document.getElementById("flair");
 
     const titleEl = document.getElementsByClassName("title-element");
     var selectedEl = titleEl[0];
 
     window.onscroll = () => {
-        pageScrollIndicator(flair);
+        // pageScrollIndicator(flair);
 
         for (let i = 0; i < titleEl.length; i++) {
             // Get the navigation id by the section on the page
