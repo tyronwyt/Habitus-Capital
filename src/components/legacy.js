@@ -174,7 +174,7 @@ const content = [
     },
 	{
         title: "'Keep only what remains', nourished and blessed by the sun and soils'",
-        tense: "Habitus Capital",
+        tense: "Habitus Capital Legacy",
 		// description:
 		// 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
 		image: `${dandelion}`,
@@ -186,18 +186,18 @@ const Legacy = () => (
         <div id="title-element">
             <div id="top"/>  
         </div>
-        <Slider duration="2000" autoplay="5000" touchDisabled="true">
+        <Slider duration="2000" autoplay="5000" touchDisabled="true" infinite="true">
             {content.map((item, index) => <div key={index} style={{height: "100vh", background: `url('${item.image}') no-repeat center center` }}>
-                <Particles
+                {/* <Particles
                 params={particleParams}
                 style={{
                     width: '100%',
                     position: 'absolute',
                     height: "calc(100vh - 100px)",
                 }}
-                />
+                /> */}
                 <div className={`${legacyStyles.slideContent} ${item.class}`}>
-                    <p className={legacyStyles.tense}>{item.tense}</p>
+                    <p className={legacyStyles.tense} data-tense={item.tense}>{item.tense}</p>
                     <h2 className={legacyStyles.sliderTitle}>{item.title}</h2>
                     <div className={legacyStyles.sliderDesc}>{item.description}</div>
                 </div>
