@@ -8,7 +8,7 @@ import linkedin from "../assets/images/linkedin.svg"
 
 const Contact = () => (
     <section className={contactStyles.contact}>
-        <div id="title-element">
+        <div className="title-element">
             <div id="contact"/>
             <h2 className={contactStyles.title}>Contact Us</h2>
         </div>

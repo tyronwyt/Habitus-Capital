@@ -183,7 +183,7 @@ const content = [
 
 const Legacy = () => (
     <section className={legacyStyles.legacy}>
-        <div id="title-element">
+        <div className="title-element">
             <div id="top"/>  
         </div>
         <Slider duration="2000" autoplay="5000" touchDisabled="true" infinite="true">

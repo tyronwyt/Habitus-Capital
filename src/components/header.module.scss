@@ -1,12 +1,8 @@
 .header {
-    background: #000;
-    height: 100px;
-    color: #fff;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 3;
-    transition: all .2s;
 }
 
 .header h1 {
@@ -22,14 +18,25 @@
     color: #fff;
 }
 
-.header a:hover {
-    color: #ba816e;
+// .header a:hover {
+//     color: #ba816e;
+//     border-bottom: 1px solid #ba816e;
+// }
+
+.header .top {
+    height: 60px;
+    background-color: #000;
+    border-bottom: 3px solid #ba816e;
+}
+
+.header .bottom {
+    height: 50px;
+    background-color: rgba($color: #000000, $alpha: 0.7)
 }
 
 .header .wrapper {
     max-width: 100%;
     margin: 0 auto;
-    padding: 25px 0;
     text-align: center;
     display: flex;
     transition: all .2s;
@@ -37,43 +44,57 @@
 
 // onScroll resize header
 
-.header[data-scroll="true"] {
-    height: 50px;
-    overflow: hidden;
-}
+// .header[data-scroll="true"] {
+//     height: 50px;
+//     overflow: hidden;
+// }
 
-.header[data-scroll="true"] .wrapper {
-    padding-top: 0px;
-}
+// .header[data-scroll="true"] .wrapper {
+//     padding-top: 0px;
+// }
 
-.header[data-scroll="true"] .logo img {
-    max-width: 50px;
-}
+// .header[data-scroll="true"] .logo img {
+//     max-width: 50px;
+// }
 
 .logo {
     flex-basis: 100%;
+    cursor: pointer;
+    padding: 10px 0px;
 }
 
-.nav {
-    display: none;
+.logo img {
+    width: 150px;
+    transition: all .2s;
 }
 
 .nav ul {
     list-style: none;
     font-family: 'Lato', sans-serif;
-    font-size: 0.8em;
+    font-weight: 500;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 1.5em 0;
 }
 
+.nav ul li a{
+  
+    transition: all .3s;
+    padding-bottom: 2px;
+}
 
-.nav ul li:hover, {
+.nav ul li a[data-selected="true"],
+.nav ul li a:hover {
+  
     color: #ba816e;
+    border-bottom: 2px solid #ba816e; 
 }
 
-.logo img{
-    width: 100px;
-    transition: all .1s;
-    margin: 0 auto;
-}
+// .logo img{
+//     width: 100px;
+//     transition: all .1s;
+//     margin: 0 auto;
+// }
 
 .logo img:hover {
     transform: scale(1.1);
@@ -85,10 +106,6 @@
         text-align: left;
     }
 
-    .logo {
-        flex-basis: 10%;
-    }
-
     .nav {
         flex-grow: 1;
         text-align: right;
@@ -98,10 +115,5 @@
     .nav ul li {
         display: inline;
         margin-right: 1.5em;
-    }
-
-    .logo img {
-        display: inline;
-        flex-basis: 20%;
     }
 }

@@ -43,7 +43,7 @@ const Update = () => (
 }
     render={data => (
         <section className={updateStyles.update}>
-          <div id="title-element">
+          <div className="title-element">
             <div id="updates"/>
             <h2 className={updateStyles.title}>Live Updates</h2>
           </div>

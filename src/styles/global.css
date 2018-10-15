@@ -5,7 +5,6 @@ body {
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    margin-top: 100px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -23,17 +22,17 @@ h2, h3 {
     display: none;
 }
 
-#title-element {
+.title-element {
     position: relative;
 }
 
-#title-element div {
+.title-element div {
     position: absolute;
-    top: -70px;
+    top: -150px;
     left: 0;
 }
 
-#title-element #top {
+.title-element #top {
     top: -150px;
 }
 

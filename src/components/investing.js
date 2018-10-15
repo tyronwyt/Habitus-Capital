@@ -4,7 +4,7 @@ import investingStyles from "./investing.module.scss"
 
 const Investing = () => (
     <section className={investingStyles.investing}>
-        <div id="title-element">
+        <div className="title-element">
             <div id="investing"/>
             <h2 className={investingStyles.title}>Investing</h2>
         </div>

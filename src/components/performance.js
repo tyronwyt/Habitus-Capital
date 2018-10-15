@@ -20,7 +20,7 @@ class Performance extends Component {
     render() {
         return (
             <section className={performanceStyles.performance}>
-                <div id="title-element">
+                <div className="title-element">
                     <div id="performance"/>
                     <h2 className={performanceStyles.title}>Performance</h2>
                 </div>
