@@ -12,6 +12,8 @@ function splitDate(date, output) {
       return dateArr[1]
     case "day":
       return dateArr[0]
+    default:
+      return ""
   }
 }
 

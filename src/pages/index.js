@@ -19,7 +19,7 @@ class IndexPage extends Component {
         }
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.getChartData();
     }
 

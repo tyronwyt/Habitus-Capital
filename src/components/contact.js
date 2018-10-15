@@ -49,11 +49,11 @@ const Contact = () => (
                     <p>@habituscapital<br/>
                     #HabitusInvesting</p>
                 </a>
-                <a href="#">
+                <a href="https://www.youtube.com">
                     <img src={youtube} alt="Youtube" align="left"/>
                     <p>Habitus Capital</p>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com">
                     <img src={linkedin} alt="Linked In" align="left"/>
                     <p>Habitus Capital</p>
                 </a>

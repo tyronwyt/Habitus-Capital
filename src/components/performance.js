@@ -11,7 +11,7 @@ class Performance extends Component {
         };
     }
 
-    componentWillReceiveProps(nextProps, prevState) {
+    UNSAFE_componentWillReceiveProps(nextProps, prevState) {
         if (nextProps.chartData !== prevState.chartData) {
             this.setState({chartData: nextProps.chartData})
         }
