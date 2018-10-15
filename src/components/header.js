@@ -27,13 +27,12 @@ const Header = () => (
             </div>
             <div className={headerStyles.nav}>
                 <ul>
-                    <li><Link to="/#" onClick={(e) => {scrollTo('#top', e)}}>
-                            Our Legacy</Link>
-                    </li>
-                    <li><Link to="/#investing" onClick={(e) => {scrollTo('#investing', e)}}>Investing</Link></li>
-                    <li><Link to="/#performance" onClick={(e) => {scrollTo('#performance', e)}}>Performance</Link></li>
-                    <li><Link to="/#updates" onClick={(e) => {scrollTo('#updates', e)}}>Live Updates</Link></li>
-                    <li><Link to="/#contact" onClick={(e) => {scrollTo('#contact', e)}}>Contact</Link></li>
+                    <li><Link to="/#" onClick={(e) => {scrollTo('#top', e)}}>OUR LEGACY</Link></li>
+                    <li><Link to="/#investing" onClick={(e) => {scrollTo('#investing', e)}}>INVESTING</Link></li>
+                    <li><Link to="/#performance" onClick={(e) => {scrollTo('#performance', e)}}>PERFORMANCE</Link></li>
+                    <li><Link to="/#updates" onClick={(e) => {scrollTo('#updates', e)}}>LIVE UPDATES</Link></li>
+                    <li><Link to="/#contact" onClick={(e) => {scrollTo('#contact', e)}}>CONTACT</Link></li>
+                    <li><Link to="#">TEAM MEMBERS</Link></li>
                 </ul>
             </div>
         </div>
