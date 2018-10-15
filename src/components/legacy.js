@@ -8,9 +8,10 @@ import legacyStyles from "./legacy.module.scss"
 import aloe from "../assets/images/aloe_960x350.png"
 import chameleon from "../assets/images/chameleon_960x350.png"
 import dandelion from "../assets/images/dandelion.jpg"
-import glassBall from "../assets/images/glassBall.jpg"
-import bullBear from "../assets/images/bullBear.jpg"
-import trees from "../assets/images/trees.jpg"
+import past from "../assets/images/past.jpg"
+import present from "../assets/images/present.jpg"
+import future from "../assets/images/future.jpg"
+
 
 const particleParams = {
     // particles: {
@@ -159,18 +160,18 @@ const content = [
         title: 'We Invest in; our culture, our dynamic edges and the consistent evolution of our successful habits',
         tense: "Past",
 		class: `${legacyStyles.left}`,
-		image: `${glassBall}`,
+		image: `${past}`,
     },
     {
         title: 'You Invest in; our vision of the future',
         tense: "Present",
-		image: `${bullBear}`,
+		image: `${present}`,
     },
     {
         title: 'Together; We achieve naturally, high-performance',
         tense: "Future",
         class: `${legacyStyles.right}`,
-		image: `${trees}`,
+		image: `${future}`,
     },
 	{
         title: "'Keep only what remains', nourished and blessed by the sun and soils'",

@@ -84,6 +84,9 @@
 .slideContent {
     max-width: 70%;
     margin: 80px auto 0 auto;
+    background: rgba($color: #000, $alpha: .8);
+    padding: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
 }
 
 .sliderTitle {
@@ -95,10 +98,23 @@
 
 .tense {
     color: #ba816e;
-    border-bottom: 3px solid #ba816e;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    margin: 0 auto;
+    border-bottom: 2px solid #ba816e;
+    // text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    margin: 0 auto 10px auto;
+    padding-bottom: 5px;
+    position: relative;
 }
+
+.tense:before {
+    position: absolute;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background: #ba816e;
+    border-radius: 50%;
+    top: 20px;
+}
+
 
 .tense[data-tense="Past"] {
     text-align: left;
@@ -110,6 +126,14 @@
 
 .tense[data-tense="Future"] {
     text-align: right;
+}
+
+.tense[data-tense="Present"]:before {
+    left: 48%;
+}
+
+.tense[data-tense="Future"]:before {
+    right: 0;
 }
 
 .legacy canvas {
@@ -145,7 +169,7 @@
     }
 
     .slideContent {
-        margin-top: 200px;
+        margin-top: 250px;
         max-width: 30%;
     }
 
