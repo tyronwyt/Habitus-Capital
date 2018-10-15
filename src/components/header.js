@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 
 import logo from "../assets/images/logo_text.png"
+import flair from "../assets/images/flair.png"
 
 // Smooth scroll effect
 function scrollTo(position, e) {
@@ -21,6 +22,9 @@ const Header = () => (
             <div className={headerStyles.wrapper}>
                 <div className={headerStyles.logo}>
                 <Link to="/"><img id="logo" src={logo} alt="Habitus Capital" /></Link>
+                <div id="flair">
+                    <img src={flair} alt=""></img>
+                </div>
                 </div>
             </div>
         </div>
