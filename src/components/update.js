@@ -4,20 +4,16 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import updateStyles from "./update.module.scss"
 
 function splitDate(date, output) {
-  if (date) {
-    var dateArr = date.split('-');
-    switch(output) {
-      case "year":
-        return dateArr[2]
-      case "month":
-        return dateArr[1]
-      case "day":
-        return dateArr[0]
-      default:
-        return ""
-    }
-  } else {
-    return ""
+  var dateArr = date.split('-');
+  switch(output) {
+    case "year":
+      return dateArr[2]
+    case "month":
+      return dateArr[1]
+    case "day":
+      return dateArr[0]
+    default:
+      return ""
   }
 }
 

@@ -18,7 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     return new Promise((resolve, reject) => {
       graphql(`
         {
-          allMarkdownRemark {
+          allMarkdownRemark(filter: { fileAbsolutePath: {regex : "\/posts/"} }) {
             edges {
               node {
                 fields {
