@@ -4,16 +4,20 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import updateStyles from "./update.module.scss"
 
 function splitDate(date, output) {
-  var dateArr = date.split('-');
-  switch(output) {
-    case "year":
-      return dateArr[2]
-    case "month":
-      return dateArr[1]
-    case "day":
-      return dateArr[0]
-    default:
-      return ""
+  if (date) {
+    var dateArr = date.split('-');
+    switch(output) {
+      case "year":
+        return dateArr[2]
+      case "month":
+        return dateArr[1]
+      case "day":
+        return dateArr[0]
+      default:
+        return ""
+    }
+  } else {
+    return ""
   }
 }
 
@@ -21,7 +25,9 @@ const Update = () => (
     <StaticQuery
     query={graphql`
     query {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC },
+        filter: { fileAbsolutePath: {regex : "\/posts/"} },) {
         totalCount
         edges {
           node {
