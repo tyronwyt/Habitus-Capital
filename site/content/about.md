@@ -49,4 +49,3 @@ block_3: |-
 
   Habitus Capital
 ---
-

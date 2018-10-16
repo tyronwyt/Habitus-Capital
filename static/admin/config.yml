@@ -17,14 +17,24 @@ collections:
       - { name: thumbnail, label: Featured Image, widget: image }
       - { name: body, label: Body, widget: markdown }
 
-  - name: sections
-    label: "Sections"
+  - name: contact
+    label: "Contact Us"
     files:
-      - label: "Contact Section"
-        name: "contact"
-        file: "site/content/about.md"
+      - label: "1st Block"
+        name: "block_1"
+        extenstion: markdown
+        file: "site/content/contact_1.md"
         fields:
-          - {label: Section Title, name: title, widget: string }
-          - {label: Block 1, name: block_1, widget: markdown }
-          - {label: Block 2, name: block_2, widget: markdown }
-          - {label: Block 3, name: block_3, widget: markdown }
+          - {label: Body, name: body, widget: markdown }
+
+      - label: "2nd Block"
+        name: "block_2"
+        file: "site/content/contact_2.md"
+        fields:
+          - {label: Body, name: body, widget: markdown }
+
+      - label: "3rd Block"
+        name: "block_3"
+        file: "site/content/contact_3.md"
+        fields:
+          - {label: Body, name: body, widget: markdown }
