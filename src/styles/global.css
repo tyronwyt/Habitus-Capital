@@ -38,7 +38,7 @@ h2, h3 {
 
 /* Slider Styles */
 .slider {
-    height: 50vh !important;
+    height: 100vh !important;
 }
 
 @media (min-width: 768px) {
@@ -46,6 +46,14 @@ h2, h3 {
     .slider {
         height: 100vh !important;
     }
+}
+
+body .slider a.previousButton {
+	left: 0;
+}
+
+body .slider a.nextButton {
+	right: 0;
 }
 
 /* Slider animations */
