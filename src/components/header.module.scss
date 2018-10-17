@@ -19,7 +19,7 @@
 }
 
 .header .top {
-    height: 60px;
+    height: 50px;
     background-color: #000;
     border-bottom: 3px solid #ba816e;
 }
@@ -40,7 +40,7 @@
 
 .logo {
     flex-basis: 100%;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .logo img {
@@ -58,8 +58,8 @@
 	width: 5px;
 	height: 5px;
 	position: absolute;
-	top: 39px;
-	left: 20%;
+	top: 30px;
+	left: 38%;
 }
 
 .nav ul {
@@ -110,6 +110,6 @@
     }
 
     .flair {
-        left: 15%;
+        left: 10%;
     }
 }

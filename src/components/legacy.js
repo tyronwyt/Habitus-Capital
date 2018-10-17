@@ -157,28 +157,27 @@ const particleParams = {
 
 const content = [
     {
-        title: 'We Invest in; our culture, our dynamic edges and the consistent evolution of our successful habits',
-        tense: "Past",
-		class: `${legacyStyles.left}`,
-		image: `${past}`,
+      title: 'We Invest in; our culture, our dynamic edges and the consistent evolution of our successful habits',
+      tense: "Past",
+      class: `${legacyStyles.left}`,
+      image: `${past}`,
     },
     {
-        title: 'You Invest in; our vision of the future',
-        tense: "Present",
-		image: `${present}`,
+      title: 'You Invest in; our vision of the future',
+      tense: "Present",
+		  image: `${present}`,
     },
     {
-        title: 'Together; We achieve naturally, high-performance',
-        tense: "Future",
-        class: `${legacyStyles.right}`,
-		image: `${future}`,
+      title: 'Together; We achieve naturally, high-performance',
+      tense: "Future",
+      class: `${legacyStyles.right}`,
+      image: `${future}`,
     },
 	{
-        title: "'Keep only what remains', nourished and blessed by the sun and soils'",
-        tense: "Habitus Capital Legacy",
-		// description:
-		// 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
-		image: `${dandelion}`,
+      title: "'Keep only what remains', nourished and blessed by the sun and soils'",
+      tense: "Habitus Capital Legacy",
+      class: `${legacyStyles.legacy}`,
+      image: `${dandelion}`,
     },
 ];
 
@@ -199,6 +198,7 @@ const Legacy = () => (
                 /> */}
                 <div className={`${legacyStyles.slideContent} ${item.class}`}>
                     <p className={legacyStyles.tense} data-tense={item.tense}>{item.tense}</p>
+                    <p className={legacyStyles.tenseDivider}><span className={legacyStyles.past}></span><span className={legacyStyles.present}></span><span className={legacyStyles.future}></span></p>
                     <h2 className={legacyStyles.sliderTitle}>{item.title}</h2>
                     <div className={legacyStyles.sliderDesc}>{item.description}</div>
                 </div>

@@ -84,7 +84,7 @@
 .slideContent {
     max-width: 70%;
     margin: 80px auto 0 auto;
-    background: rgba($color: #000, $alpha: .8);
+    background: rgba($color: #000, $alpha: .6);
     padding: 20px;
     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
 }
@@ -96,25 +96,64 @@
     margin: 0 auto;
 }
 
+.slideContent.legacy {
+    background: none;
+    box-shadow: none;
+}
+
+.slideContent.legacy .tense {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.slideContent.legacy .tenseDivider {
+    display: none;
+}
+
 .tense {
     color: #ba816e;
-    border-bottom: 2px solid #ba816e;
+    // border-bottom: 2px solid #ba816e;
     // text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
     padding-bottom: 5px;
     position: relative;
 }
 
-.tense:before {
+// .tense:before {
+//     position: absolute;
+//     content: " ";
+//     width: 15px;
+//     height: 15px;
+//     background: #ba816e;
+//     border-radius: 50%;
+//     top: 20px;
+// }
+
+.tenseDivider {
+    width: 100%;
+    height: 2px;
+    background-color: #ba816e;
+    position: relative;
+    margin: 0 auto 10px auto;
+}
+
+.tenseDivider span {
     position: absolute;
-    content: " ";
+    // content: " ";
     width: 15px;
     height: 15px;
     background: #ba816e;
     border-radius: 50%;
-    top: 20px;
+    top: -6px;
 }
 
+.tenseDivider .present {
+    left: 49%;
+}
+
+.tenseDivider .future {
+    right: 0%;
+}
 
 .tense[data-tense="Past"] {
     text-align: left;
@@ -174,16 +213,17 @@
     }
 
     .sliderTitle {
-        font-size: 3em;
+        font-size: 2.5em;
+        text-align: center;
         // max-width: 500px;
     }
 
     .slideContent.left {
-        margin-left: 200px;
+        margin-left: 100px;
     }
 
     .slideContent.right {
-        margin-right: 200px;
+        margin-right: 100px;
     }
 
     .legacy canvas {
