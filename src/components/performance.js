@@ -7,8 +7,11 @@ class Performance extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            chartData: {}
+            chartData: {},
+            selectedFund: "Fund A"
         };
+
+        this.setActive = this.setActive.bind(this);
     }
 
     UNSAFE_componentWillReceiveProps(nextProps, prevState) {
@@ -16,6 +19,20 @@ class Performance extends Component {
             this.setState({chartData: nextProps.chartData})
         }
     }
+
+    setActive(e) {
+        const fundList = e.currentTarget.parentNode.childNodes;
+        const selectedFund = e.currentTarget.innerHTML;
+
+        console.log(selectedFund);
+        fundList.forEach(element => {
+            element.removeAttribute('data-active');
+        });
+        e.currentTarget.setAttribute('data-active', "true");
+        this.setState(state => ({selectedFund: selectedFund}));
+    }
+
+
 
     render() {
         return (
@@ -25,13 +42,14 @@ class Performance extends Component {
                     <h2 className={performanceStyles.title}>Performance</h2>
                 </div>
                 <ul className={performanceStyles.tabList}>
-                    <li className={performanceStyles.selected}>Fund A</li>
-                    <li>Fund B</li>
-                    <li>Fund C</li>
+                    <li onClick={(e) => {this.setActive(e)}} data-active="true">Fund A</li>
+                    <li onClick={(e) => {this.setActive(e)}}>Fund B</li>
+                    <li onClick={(e) => {this.setActive(e)}}>Fund C</li>
                 </ul>
                 <div className={performanceStyles.tabContainer}>
+                    <h3>{this.state.selectedFund}</h3>
                     <div className={performanceStyles.chart}>
-                        <HorizontalBar 
+                        <HorizontalBar height={100}
                             data={this.state.chartData}
                             options={{
                                 scales: {

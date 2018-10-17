@@ -10,20 +10,23 @@
 }
 
 .tabList {
-    width: 60%;
+    width: 80%;
     list-style: none;
     margin: 0 auto 10px auto;
     padding: 0;
-}
-
-.selected {
-    color: #ba816e;
 }
 
 .tabList li {
     display: inline;
     padding: 10px;
     cursor: pointer;
+    transition: all .2s;
+}
+
+.tabList li[data-active="true"],
+.tabList li:hover {
+    color: #ba816e;
+    text-decoration: underline
 }
 
 .tabContainer {

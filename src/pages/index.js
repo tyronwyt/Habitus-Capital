@@ -61,7 +61,7 @@ class IndexPage extends Component {
             <Layout>
                 <Legacy />
                 <Investing />
-                <Performance chartData={this.state.chartData} />
+                <Performance chartData={this.state.chartData} height={200}/>
                 <Update />
                 <Contact />
             </Layout>
