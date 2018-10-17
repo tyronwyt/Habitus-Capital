@@ -204,10 +204,12 @@ const Legacy = () => (
                 </div>
             </div>)}
         </Slider>
-        <h2 className={legacyStyles.title}>Our Culture</h2>
-        <div className={legacyStyles.video}>
-                <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="Placeholder video"></iframe>
-        </div>
+        <section className={legacyStyles.culture}>
+          <h2 className={legacyStyles.title}>Our Culture</h2>
+          <div className={legacyStyles.video}>
+                  <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="Placeholder video"></iframe>
+          </div>
+        </section>
         <div className={legacyStyles.row}>
             <div className={`${legacyStyles.block} ${legacyStyles.black} ${legacyStyles.left}`}>
                 <h3 className={legacyStyles.header}>Our DNA</h3>
