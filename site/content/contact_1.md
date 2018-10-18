@@ -1,7 +1,7 @@
 ---
 date: 2018-10-18T13:23:28.149Z
 ---
-## Career Opportunities
+### Career Opportunities
 
 
 At Habitus Capital we believe every individual has unique talent which can be
