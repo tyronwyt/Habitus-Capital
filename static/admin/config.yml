@@ -17,27 +17,62 @@ collections:
       - { name: thumbnail, label: Featured Image, widget: image }
       - { name: body, label: Body, widget: markdown }
 
-  - name: contact
-    label: "Contact Us"
+  - name: investing
+    label: "Investing Section"
     files:
-      - label: "1st Block"
+      - label: "Block 1"
+        name: "block_1"
+        extenstion: markdown
+        file: "site/content/investing_1.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { label: Body, name: body, widget: markdown }
+      
+      - label: "Block 2"
+        name: "block_2"
+        extenstion: markdown
+        file: "site/content/investing_2.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { label: Body, name: body, widget: markdown }
+
+      - label: "Block 3"
+        name: "block_3"
+        extenstion: markdown
+        file: "site/content/investing_3.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { label: Body, name: body, widget: markdown }
+      
+      - label: "Block 4"
+        name: "block_4"
+        extenstion: markdown
+        file: "site/content/investing_4.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { label: Body, name: body, widget: markdown }
+
+  - name: contact
+    label: "Contact Section"
+    files:
+      - label: "Block 1"
         name: "block_1"
         extenstion: markdown
         file: "site/content/contact_1.md"
         fields:
           - { name: date, label: Date, widget: date }
-          - {label: Body, name: body, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
 
-      - label: "2nd Block"
+      - label: "Block 2"
         name: "block_2"
         file: "site/content/contact_2.md"
         fields:
           - { name: date, label: Date, widget: date }
-          - {label: Body, name: body, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
 
-      - label: "3rd Block"
+      - label: "Block 3"
         name: "block_3"
         file: "site/content/contact_3.md"
         fields:
           - { name: date, label: Date, widget: date }
-          - {label: Body, name: body, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
