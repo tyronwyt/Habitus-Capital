@@ -23,7 +23,7 @@ collections:
       - label: "Block 1"
         name: "block_1"
         extenstion: markdown
-        file: "site/content/investing_1.md"
+        file: "site/content/investing/investing_1.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
@@ -31,7 +31,7 @@ collections:
       - label: "Block 2"
         name: "block_2"
         extenstion: markdown
-        file: "site/content/investing_2.md"
+        file: "site/content/investing/investing_2.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
@@ -39,7 +39,7 @@ collections:
       - label: "Block 3"
         name: "block_3"
         extenstion: markdown
-        file: "site/content/investing_3.md"
+        file: "site/content/investing/investing_3.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
@@ -47,7 +47,7 @@ collections:
       - label: "Block 4"
         name: "block_4"
         extenstion: markdown
-        file: "site/content/investing_4.md"
+        file: "site/content/investing/investing_4.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
@@ -58,21 +58,21 @@ collections:
       - label: "Block 1"
         name: "block_1"
         extenstion: markdown
-        file: "site/content/contact_1.md"
+        file: "site/content/contact/contact_1.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
 
       - label: "Block 2"
         name: "block_2"
-        file: "site/content/contact_2.md"
+        file: "site/content/contact/ontact_2.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
 
       - label: "Block 3"
         name: "block_3"
-        file: "site/content/contact_3.md"
+        file: "site/content/contact/contact_3.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
