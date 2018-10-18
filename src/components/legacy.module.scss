@@ -50,12 +50,12 @@
     color: #ba816e;
 }
 
-.header {
+.legacy .block h3 {
     position: relative;
     margin-left: 55px;
 }
 
-.header:before {
+.legacy .block h3:before {
     position: absolute;
     content: "Habitus Capital";
     color: #ba816e;
@@ -65,7 +65,7 @@
     left: -55px;
 }
 
-.header:after {
+.legacy .block h3:after {
     position: absolute;
     content: "/";
     color: #ba816e;
@@ -74,14 +74,14 @@
     left: -15px;
 }
 
-.highlight {
+.highlight p span {
     font-family: 'Lato', sans-serif;
     font-size: 1.2em;
     font-weight: 700;
     color: #ba816e;
 }
 
-.highlight:after {
+.highlight p span:after {
     content: ' / ';
     font-weight: 400;
 }
@@ -89,9 +89,7 @@
 .slideContent {
     max-width: 70%;
     margin: 35vh auto 0 auto;
-    // background: rgba($color: #000, $alpha: .6);
     padding: 20px;
-    // box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
 }
 
 .sliderTitle {
@@ -124,7 +122,6 @@
     font-weight: 700;
     font-size: 1.2em;
 }
-
 
 .tenseDivider {
     width: 100%;

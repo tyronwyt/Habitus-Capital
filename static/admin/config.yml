@@ -41,6 +41,13 @@ collections:
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
+      
+      - label: "Block 4"
+        name: "block_4"
+        file: "site/content/legacy/legacy_4.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { label: Body, name: body, widget: markdown }
 
   - name: investing
     label: "Investing Section"
