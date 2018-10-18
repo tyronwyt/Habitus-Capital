@@ -25,16 +25,19 @@ collections:
         extenstion: markdown
         file: "site/content/contact_1.md"
         fields:
+          - { name: date, label: Date, widget: date }
           - {label: Body, name: body, widget: markdown }
 
       - label: "2nd Block"
         name: "block_2"
         file: "site/content/contact_2.md"
         fields:
+          - { name: date, label: Date, widget: date }
           - {label: Body, name: body, widget: markdown }
 
       - label: "3rd Block"
         name: "block_3"
         file: "site/content/contact_3.md"
         fields:
+          - { name: date, label: Date, widget: date }
           - {label: Body, name: body, widget: markdown }
