@@ -2,7 +2,6 @@ import React from "react"
 
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import Particles from 'react-particles-js';
 
 import legacyStyles from "./legacy.module.scss"
 import aloe from "../assets/images/aloe_960x350.png"
@@ -11,149 +10,6 @@ import dandelion from "../assets/images/dandelion.jpg"
 import past from "../assets/images/past.jpg"
 import present from "../assets/images/present.jpg"
 import future from "../assets/images/future.jpg"
-
-
-const particleParams = {
-    // particles: {
-    //     number: {
-    //         value: 50,
-    //         density: {
-    //         enable: true,
-    //         value_area: 800
-    //         }
-    //     },
-    //     color: {
-    //         value: "#ffffff"
-    //     },
-    //     shape: {
-    //         type: "circle",
-    //         stroke: {
-    //         width: 0,
-    //         color: "#000000"
-    //         },
-    //         polygon: {
-    //         nb_sides: 5
-    //         }
-    //     },  
-    //     line_linked: {
-    //         shadow: {
-    //             enable: true,
-    //             color: "#fff",
-    //             blur: 5
-    //         }
-    //     },
-    // },
-    // retina_detect: true,
-
-        particles: {
-          number: {
-            value: 80,
-            density: {
-              enable: true,
-              value_area: 800
-            }
-          },
-          color: {
-            value: "#ffffff"
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 0,
-              color: "#000000"
-            },
-            polygon: {
-              nb_sides: 5
-            },
-            image: {
-              src: "img/github.svg",
-              width: 100,
-              height: 100
-            }
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: {
-              enable: false,
-              speed: 1,
-              opacity_min: 0.1,
-              sync: false
-            }
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: {
-              enable: false,
-              speed: 40,
-              size_min: 0.1,
-              sync: false
-            }
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1
-          },
-          move: {
-            enable: true,
-            speed: 6,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200
-            }
-          }
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "repulse"
-            },
-            onclick: {
-              enable: true,
-              mode: "push"
-            },
-            resize: true
-          },
-          modes: {
-            grab: {
-              distance: 400,
-              line_linked: {
-                opacity: 1
-              }
-            },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3
-            },
-            repulse: {
-              distance: 100,
-              duration: 0.4
-            },
-            push: {
-              particles_nb: 4
-            },
-            remove: {
-              particles_nb: 2
-            }
-          }
-        },
-        retina_detect: true
-}
 
 const content = [
     {
@@ -188,14 +44,6 @@ const Legacy = () => (
         </div>
         <Slider duration="2000" autoplay="5000" touchDisabled="true" infinite="true">
             {content.map((item, index) => <div key={index} style={{height: "100vh", background: `url('${item.image}') no-repeat center center` }}>
-                {/* <Particles
-                params={particleParams}
-                style={{
-                    width: '100%',
-                    position: 'absolute',
-                    height: "calc(100vh - 100px)",
-                }}
-                /> */}
                 <div className={`${legacyStyles.slideContent} ${item.class}`}>
                     <p className={legacyStyles.tense} data-tense={item.tense}>{item.tense}</p>
                     <p className={legacyStyles.tenseDivider}><span className={legacyStyles.past}></span><span className={legacyStyles.present}></span><span className={legacyStyles.future}></span></p>
