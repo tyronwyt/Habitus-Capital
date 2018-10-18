@@ -21,56 +21,21 @@ class IndexPage extends Component {
     constructor() {
         super();
         this.state = {
-            chartData:{}
+            chartData: [],
         }
     }
-
-    UNSAFE_componentWillMount() {
-        this.getChartData();
-    }
-
-    // Fetch request to Google Spreadsheet for performance data
-    getChartData() {
-        fetch('https://spreadsheets.google.com/feeds/list/1UAhYsgzm2Qy4iuOx1hJt8RgMtjP1jaGmUvCid-oISAE/od6/public/basic?alt=json')
-        .then(response => {
-            return response.json();
-        }).then( response => {
-            const data = response.feed.entry,
-                labels = [],
-                dataset = [];
-            for (let i = 0; i < data.length; i++) {
-                labels.push(data[i].title.$t);
-                dataset.push(data[i].content.$t.replace('value: ', ''));
-            }
-            let chartData = {
-                labels: labels,
-                datasets: [
-                    {
-                    label: "% Return on Capital m/m ",
-                    data: dataset,
-                    backgroundColor: "#307968",
-                    }
-                ]
-            }
-            this.setState({chartData: chartData});
-        })
-    }
-
+    
     render() {
         return(
             <Layout>
                 <Legacy />
                 <Investing />
-                <Performance chartData={this.state.chartData} height={200}/>
+                <Performance/>
                 <Update />
                 <Contact />
             </Layout>
         )
     }
 }
-
-// const IndexPage = ({ data }) => (
-    
-// )
 
 export default IndexPage
