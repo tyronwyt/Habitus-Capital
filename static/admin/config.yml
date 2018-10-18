@@ -65,7 +65,7 @@ collections:
 
       - label: "Block 2"
         name: "block_2"
-        file: "site/content/contact/ontact_2.md"
+        file: "site/content/contact/contact_2.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
