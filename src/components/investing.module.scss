@@ -29,6 +29,23 @@
     padding: 0 15px;
 }
 
+.row div.button {
+    background: #ba816e;
+    text-align: center;
+    padding: 10px 0;
+    color: #000;
+    cursor: pointer;
+    transition: all .2s;
+    font-weight: 700;
+}
+
+
+.row div.button:hover {
+    background: #94695b;
+    text-align: center;
+    padding: 10px 0;
+}
+
 @media (min-width: 768px) {
     .title, .row {
         max-width: 80%;

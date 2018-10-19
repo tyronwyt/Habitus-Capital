@@ -27,7 +27,8 @@ h3 {
 }
 
 .title-element {
-    position: relative;
+	position: relative;
+	z-index: -99;
 }
 
 .title-element div {
