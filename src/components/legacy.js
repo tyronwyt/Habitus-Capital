@@ -56,7 +56,6 @@ const Legacy = () => (
     }
   `    
   }
-
   render = { data => (
       <section className={legacyStyles.legacy}>
           <div className="title-element">

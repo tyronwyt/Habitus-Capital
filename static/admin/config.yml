@@ -17,6 +17,24 @@ collections:
       - { name: thumbnail, label: Featured Image, widget: image }
       - { name: body, label: Body, widget: markdown }
   
+  - name: slider
+    label: "Slider"
+    files:
+      - label: "Slides"
+        name: "slides"
+        extenstion: markdown
+        file: "site/content/slider/slides.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { name: caption1, label: 1-Caption, widget: string }
+          - { name: title1, label: 1-Title, widget: text }
+          - { name: caption2, label: 2-Caption, widget: string }
+          - { name: title2, label: 2-Title, widget: text }
+          - { name: caption3, label: 3-Caption, widget: string }
+          - { name: title3, label: 3-Title, widget: text }
+          - { name: caption4, label: 4-Caption, widget: string }
+          - { name: title4, label: 4-Title, widget: text }
+
   - name: legacy
     label: "Legacy Section"
     files:
