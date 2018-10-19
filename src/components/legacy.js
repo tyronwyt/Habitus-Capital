@@ -12,46 +12,62 @@ import past from "../assets/images/past.jpg"
 import present from "../assets/images/present.jpg"
 import future from "../assets/images/future.jpg"
 
-const content = [
+function setupSlides(data) {
+  const content = [
     {
-      title: 'We Invest in; our culture, our dynamic edges and the consistent evolution of our successful habits',
-      tense: "Past",
+      title: data.frontmatter.title1,
+      tense: data.frontmatter.caption1,
       class: `${legacyStyles.left}`,
       image: `${past}`,
     },
     {
-      title: 'You Invest in; our vision of the future',
-      tense: "Present",
+      title: data.frontmatter.title2,
+      tense: data.frontmatter.caption2,
 		  image: `${present}`,
     },
     {
-      title: 'Together; We achieve naturally, high-performance',
-      tense: "Future",
+      title: data.frontmatter.title3,
+      tense: data.frontmatter.caption3,
       class: `${legacyStyles.right}`,
       image: `${future}`,
     },
-	{
-      title: "'Keep only what remains', nourished and blessed by the sun and soils'",
-      tense: "Habitus Capital Legacy",
+	  {
+      title: data.frontmatter.title4,
+      tense: data.frontmatter.caption4,
       class: `${legacyStyles.legacy}`,
       image: `${dandelion}`,
     },
 ];
 
+  return content;
+}
+
 const Legacy = () => (
   <StaticQuery query = {graphql `
     query {
-        block_1: markdownRemark(fileAbsolutePath: {regex: "/legacy_1/"}) {
+      block_1: markdownRemark(fileAbsolutePath: {regex: "/legacy_1/"}) {
+        html
+      }
+      block_2: markdownRemark(fileAbsolutePath: {regex: "/legacy_2/"}) {
+        html
+      }
+      block_3: markdownRemark(fileAbsolutePath: {regex: "/legacy_3/"}) {
           html
+      }
+      block_4: markdownRemark(fileAbsolutePath: {regex: "/legacy_4/"}) {
+        html
+      }
+      slides: markdownRemark(fileAbsolutePath: {regex: "/slides/"}) {
+        frontmatter {
+          caption1
+          title1
+          caption2
+          title2
+          caption3
+          title3
+          caption4
+          title4
         }
-        block_2: markdownRemark(fileAbsolutePath: {regex: "/legacy_2/"}) {
-          html
-        }
-        block_3: markdownRemark(fileAbsolutePath: {regex: "/legacy_3/"}) {
-            html
-        }
-        block_4: markdownRemark(fileAbsolutePath: {regex: "/legacy_4/"}) {
-          html
       }
     }
   `    
@@ -62,7 +78,7 @@ const Legacy = () => (
               <div id="top"/>  
           </div>
           <Slider duration="2000" autoplay="5000" touchDisabled="true" infinite="true">
-              {content.map((item, index) => <div key={index} style={{height: "100vh", background: `url('${item.image}') no-repeat center center` }}>
+              {setupSlides(data.slides).map((item, index) => <div key={index} style={{height: "100vh", background: `url('${item.image}') no-repeat center center` }}>
                   <div className={`${legacyStyles.slideContent} ${item.class}`}>
                       <p className={legacyStyles.tense} data-tense={item.tense}>{item.tense}</p>
                       <p className={legacyStyles.tenseDivider}><span className={legacyStyles.past}></span><span className={legacyStyles.present}></span><span className={legacyStyles.future}></span></p>
