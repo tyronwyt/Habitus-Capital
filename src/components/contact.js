@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import contactStyles from "./contact.module.scss"
-import mountains from "../assets/images/mountains_960x350.jpg"
+import tree from "../assets/images/tree_960x350.jpg"
 import twitter from "../assets/images/twitter.svg"
 import youtube from "../assets/images/youtube.svg"
 import linkedin from "../assets/images/linkedin.svg"
@@ -32,7 +32,7 @@ const Contact = () => (
             dangerouslySetInnerHTML={{__html: data.block_1.html}}>
             </div>
             <div className={contactStyles.block} 
-                style={{background: "url(" + mountains + ")", 
+                style={{background: "url(" + tree + ")", 
                 backgroundSize: "cover", 
                 backgroundPosition: "center", 
                 backgroundRepeat: "none" }}>
