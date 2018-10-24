@@ -23,7 +23,7 @@ class Performance extends Component {
         const feedUrls = [
             'https://spreadsheets.google.com/feeds/list/1UAhYsgzm2Qy4iuOx1hJt8RgMtjP1jaGmUvCid-oISAE/od6/public/basic?alt=json',
             'https://spreadsheets.google.com/feeds/list/1NZM91sYM446Hry0H7stMnlalj4eCc-yAgDjF_TCMqrI/od6/public/basic?alt=json',
-            'https://spreadsheets.google.com/feeds/list/1UAhYsgzm2Qy4iuOx1hJt8RgMtjP1jaGmUvCid-oISAE/od6/public/basic?alt=json'
+            'https://spreadsheets.google.com/feeds/list/1969fIH-xw5DGl6HEexaX4orUyo4Q-fFVXaGggZJJBDA/od6/public/basic?alt=json'
         ]
         const selectedUrl = () => {
             switch(this.state.selectedFund) {
@@ -37,7 +37,6 @@ class Performance extends Component {
                     return null
             }
         }
-        console.log(selectedUrl());
         fetch(selectedUrl())
         .then(response => {
             return response.json();
@@ -83,8 +82,6 @@ class Performance extends Component {
     setActive(e) {
         const fundList = e.currentTarget.parentNode.childNodes;
         const selectedFund = e.currentTarget.innerHTML;
-
-        console.log(selectedFund);
         fundList.forEach(element => {
             element.removeAttribute('data-active');
         });
