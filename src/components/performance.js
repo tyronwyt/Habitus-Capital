@@ -80,15 +80,14 @@ class Performance extends Component {
     }
 
     setActive(e) {
+        this.setState({loaded: false});
         const fundList = e.currentTarget.parentNode.childNodes;
         const selectedFund = e.currentTarget.innerHTML;
+        this.setState({selectedFund: selectedFund}, () => {this.fetchChartData();});
         fundList.forEach(element => {
             element.removeAttribute('data-active');
         });
         e.currentTarget.setAttribute('data-active', "true");
-        this.setState(state => ({selectedFund: selectedFund}));
-        this.setState({loaded: false});
-        this.fetchChartData();
     }
 
     render() {
