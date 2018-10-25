@@ -23,20 +23,11 @@ class Investing extends Component {
     }
 
     showModal() {
-        
-        // Prevent scrolling when modal is open
-        // const body = document.getElementsByTagName('body');
-
         if (this.state.modalOpen) {
-               
             return (
                 <InvestorForm onModalClose={this.modalHandler}/>
             )
         } 
-        // else {
-        //     const body = document.getElementsByTagName('body');
-        //     body[0].setAttribute('style', 'overflow: hidden');
-        // }
     }
 
     render() {
@@ -74,6 +65,7 @@ class Investing extends Component {
                         <div className={investingStyles.button} onClick={this.onClickHandler}>Investor Relations</div>
                     </div>
                 </div>
+                {/* Inject the modal to load here */}
                 {this.showModal()}
             </section>
             )}
