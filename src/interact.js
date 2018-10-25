@@ -3,19 +3,16 @@ document.onreadystatechange = () => {
 
         // Call Navigation scroll animation
         navigationScroll();
-        // pageScrollIndicator();
     }
   };
 
   // Navigation scroll animation
   function navigationScroll() {
-    // const flair = document.getElementById("flair");
 
     const titleEl = document.getElementsByClassName("title-element");
     var selectedEl = titleEl[0];
 
     window.onscroll = () => {
-        // pageScrollIndicator(flair);
 
         for (let i = 0; i < titleEl.length; i++) {
             // Get the navigation id by the section on the page
@@ -35,10 +32,3 @@ document.onreadystatechange = () => {
         }
     }
   }
-
-  function pageScrollIndicator(flair) {
-        const pageHeight = document.querySelector("body").scrollHeight - (window.innerHeight / 2);
-        const bodyTop = document.querySelector("body").getBoundingClientRect().top;
-        var percentage = (Math.abs(bodyTop) / pageHeight) * 100;
-        flair.style.left = percentage + "%";
-}
