@@ -105,7 +105,7 @@ class Performance extends Component {
                 <div className={performanceStyles.tabContainer}>
                     <h3>{this.state.selectedFund}</h3>
                     <div className={performanceStyles.chart}>
-                        {this.state.loaded ? this.chartContent() : 'Loading'}
+                        {this.state.loaded ? this.chartContent() : (<div className={performanceStyles.loader}>Loading...</div>)}
                     </div>
                 </div>
             </section>
