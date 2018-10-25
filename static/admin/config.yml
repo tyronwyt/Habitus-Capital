@@ -120,9 +120,10 @@ collections:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
 
-      - label: "Block 3"
-        name: "block_3"
+      - label: "Social Media Block"
+        name: "social_media"
         file: "site/content/contact/contact_3.md"
         fields:
           - { name: date, label: Date, widget: date }
+          - { name: social, label: Social Accounts, widget: list, fields: [{name: name, label: Social Acc. Name, widget: string}, {name: image, label: Image, widget: image}, {name: text, label: Link Text, widget: text}]}
           - { label: Body, name: body, widget: markdown }

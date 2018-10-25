@@ -13,7 +13,7 @@ class InvestorForm extends Component {
         this.props.onModalClose();
     }
 
-    componentWillMount() {
+    componentDidMount() {
         // prevent scrolling when open
         document.body.style.overflow = "hidden";
     }
