@@ -6,12 +6,13 @@ social:
     text: |-
       @habituscapital
       #HabitusInvesting
-  - {}
+    url: 'https://twitter.com/HabitusCapital'
+  - image: /assets/youtube.svg
+    name: YouTube
+    text: Habitus Capital
+    url: 'https://youtube.com'
+  - image: /assets/linkedin.svg
+    name: LinkedIn
+    text: Habitus Capital
+    url: 'https://linkedin.com'
 ---
-### Social Media
-
-[@habituscapital<br/>#HabitusInvesting](https://twitter.com/HabitusCapital)
-
-[Habitus Capital](https://youtube.com)
-
-[Habitus Capital](https://linkedin.com)

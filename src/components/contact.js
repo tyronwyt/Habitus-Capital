@@ -3,9 +3,6 @@ import { graphql, StaticQuery } from "gatsby"
 
 import contactStyles from "./contact.module.scss"
 import tree from "../assets/images/tree_960x350.jpg"
-import twitter from "../assets/images/twitter.svg"
-import youtube from "../assets/images/youtube.svg"
-import linkedin from "../assets/images/linkedin.svg"
 
 const Contact = () => (
     <StaticQuery query = {graphql`
@@ -17,7 +14,14 @@ const Contact = () => (
           html
         }
         block_3: markdownRemark(fileAbsolutePath: {regex: "/contact_3/"}) {
-            html
+            frontmatter {
+                social {
+                    image
+                    name
+                    text
+                    url
+                }
+            }
         }
       }
   `
@@ -43,22 +47,11 @@ const Contact = () => (
                 style={{ background: "#307968", color: "#fff" }}
                 dangerouslySetInnerHTML={{__html: data.block_2.html}}>
             </div>
-            <div className={`${contactStyles.block} ${contactStyles.right} ${contactStyles.social}`}
-                dangerouslySetInnerHTML={{__html: data.block_3.html}}>
-                {/* <h3>Social Media</h3>
-                <a href="https://twitter.com/HabitusCapital">
-                    <img src={twitter} alt="Twitter" align="left"/>
-                    <p>@habituscapital<br/>
-                    #HabitusInvesting</p>
-                </a>
-                <a href="https://www.youtube.com">
-                    <img src={youtube} alt="Youtube" align="left"/>
-                    <p>Habitus Capital</p>
-                </a>
-                <a href="https://www.linkedin.com">
-                    <img src={linkedin} alt="Linked In" align="left"/>
-                    <p>Habitus Capital</p>
-                </a> */}
+            <div className={`${contactStyles.block} ${contactStyles.right} ${contactStyles.social}`}>
+                <h3>Social Media</h3>
+                {data.block_3.frontmatter.social.map((item) => (
+                    <div key={item.name}><a href={item.url}><img src={item.image} alt={item.name} align="left" />{item.text}</a></div>
+                ))}
             </div>
         </div>
     </section>
