@@ -1,5 +1,12 @@
 ---
 date: 2018-10-18T14:47:45.036Z
+social:
+  - image: /assets/twitter.svg
+    name: Twitter
+    text: |-
+      @habituscapital
+      #HabitusInvesting
+  - {}
 ---
 ### Social Media
 
