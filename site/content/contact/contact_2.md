@@ -1,7 +1,7 @@
 ---
 date: 2018-10-18T14:47:21.356Z
 ---
-### Investor relations
+### General Enquiries
 
 (Button Goes here)
 
