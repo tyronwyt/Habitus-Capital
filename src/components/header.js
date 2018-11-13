@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 
 import logo from "../assets/images/logo_text.png"
-import flair from "../assets/images/flair.png"
 import lock from "../assets/images/lock.svg"
 
 class Header extends Component {
@@ -55,9 +54,6 @@ class Header extends Component {
                 <div className={headerStyles.wrapper}>
                     <div className={headerStyles.logo}>
                     <Link to="/"><img id="logo" src={logo} alt="Habitus Capital" /></Link>
-                        <div className={headerStyles.flair}>
-                            <img src={flair} alt=""></img>
-                        </div>
                     </div>
                     <div className={`${headerStyles.hamburgerIcon}`} data-toggled={this.state.navIsToggledOn ? 'true' : 'false' } onClick={this.handleNavToggle}>
                         <div className={headerStyles.bar1}></div>

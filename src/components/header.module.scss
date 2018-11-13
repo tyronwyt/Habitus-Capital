@@ -20,7 +20,7 @@
 
 .header .top {
     height: 50px;
-    background-color: #000;
+    background: linear-gradient(to bottom, #4c4c4c 0%,#0e0e0e 100%);
     border-bottom: 3px solid #ba816e;
 }
 
@@ -68,16 +68,6 @@
 
 .logo a {
     cursor: pointer;
-}
-
-/* Navigation Flair Styles */
-
-.flair {
-	width: 5px;
-	height: 5px;
-	position: absolute;
-	top: 30px;
-	left: 38%;
 }
 
 .nav ul {
