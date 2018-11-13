@@ -1,12 +1,6 @@
 ---
 date: 2018-10-18T13:23:28.149Z
 ---
-### Strategic Overview
+### Momentum Macro Fund
 
-Habitus Capital has three diverse funds
-
-1. Discretionary day trading with automated signalling of defined strategies
-2. Fully-automated algorithmic strategies
-3. Discretionary Swing Trading
-
-Allocation of capital is proportionately balanced between the three funds
+This fund is a multi-strategy fund with a core emphasis on momentum-based strategies. The strategies are employed within a unique market conditioning to enhance probabilities. This fund employs a minimal amount of leverage and seeks to capture measurable momentum within the Futures Markets
