@@ -1,6 +1,14 @@
 ---
 date: 2018-10-18T13:23:28.149Z
 ---
-### Raising capital
+### Our Edges
 
-Habitus Capital periodically invites our database of investors to review prospective investment opportunities. Should you wish to receive a prospectus, please submit your details below
+•	Our automated processes of evolving through failures
+
+•	Our revolutionary risk management tools
+
+•	Our constant search for efficiencies
+
+•	Our process of extracting consistent marginal gains
+
+**Should you wish to receive more information about our funds, please submit your details below**
