@@ -62,7 +62,7 @@ class Investing extends Component {
                     <div dangerouslySetInnerHTML={{__html: data.block_3.html}}></div>
                     <div style={{ background: "#307968" }}>
                         <div dangerouslySetInnerHTML={{__html: data.block_4.html}} style={{padding: 0, background: "none"}}></div>
-                        <div className={investingStyles.button} onClick={this.onClickHandler}>Investor Relations</div>
+                        <div className={investingStyles.button} onClick={this.onClickHandler}>Fund Enquiry</div>
                     </div>
                 </div>
                 {/* Inject the modal to load here */}

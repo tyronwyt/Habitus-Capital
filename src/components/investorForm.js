@@ -31,7 +31,7 @@ class InvestorForm extends Component {
             <div className={investorStyles.formWrapper}>
                 <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
-                    <h3>Request a prospectus</h3>
+                    <h3>Request Fund Overview</h3>
                     <p>
                         <input type="text" name="first_name" placeholder="First Name"/>
                     </p>
