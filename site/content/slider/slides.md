@@ -1,9 +1,7 @@
 ---
 date: 2018-11-13T10:50:43.229Z
 caption1: Past
-title1: >-
-  We INVEST in; our culture, dynamic edges and the consistent evolution of our
-  successful habits
+title1: '     We INVEST in; our culture, dynamic edges and the consistent evolution of our successful habits'
 caption2: Present
 title2: We CREATE; our vision of the future
 caption3: Future
