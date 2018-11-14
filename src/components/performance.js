@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { HorizontalBar } from "react-chartjs-2"
+import { graphql, StaticQuery } from "gatsby"
 
 import performanceStyles from "./performance.module.scss"
 
@@ -8,7 +9,8 @@ class Performance extends Component {
         super(props);
         this.state = {
             chartData: [],
-            selectedFund: "Fund A",
+            selectedFundKey: "0",
+            selectedFund: "",
             loaded: false,
         };
 
@@ -16,7 +18,10 @@ class Performance extends Component {
     }
 
     componentDidMount() {
-        this.fetchChartData();
+        
+        const firstFund = document.getElementById('first_fund');
+        const selectedFund = firstFund.innerHTML
+        this.setState({selectedFund: selectedFund}, () => {this.fetchChartData();})
     }
 
     fetchChartData() {
@@ -26,12 +31,12 @@ class Performance extends Component {
             'https://spreadsheets.google.com/feeds/list/1969fIH-xw5DGl6HEexaX4orUyo4Q-fFVXaGggZJJBDA/od6/public/basic?alt=json'
         ]
         const selectedUrl = () => {
-            switch(this.state.selectedFund) {
-                case "Fund A":
+            switch(this.state.selectedFundKey) {
+                case "0":
                     return feedUrls[0];
-                case "Fund B":
+                case "1":
                     return feedUrls[1];
-                case "Fund C":
+                case "2":
                     return feedUrls[2];
                 default:
                     return null
@@ -83,6 +88,8 @@ class Performance extends Component {
         this.setState({loaded: false});
         const fundList = e.currentTarget.parentNode.childNodes;
         const selectedFund = e.currentTarget.innerHTML;
+        const selectedKey = e.currentTarget.dataset.key;
+        this.setState({selectedFundKey: selectedKey});
         this.setState({selectedFund: selectedFund}, () => {this.fetchChartData();});
         fundList.forEach(element => {
             element.removeAttribute('data-active');
@@ -92,23 +99,37 @@ class Performance extends Component {
 
     render() {
         return (
-            <section className={performanceStyles.performance}>
-                <div className="title-element">
-                    <div id="performance"/>
-                    <h2 className={performanceStyles.title}>Performance</h2>
-                </div>
-                <ul className={performanceStyles.tabList}>
-                    <li onClick={(e) => {this.setActive(e)}} data-active="true">Fund A</li>
-                    <li onClick={(e) => {this.setActive(e)}}>Fund B</li>
-                    <li onClick={(e) => {this.setActive(e)}}>Fund C</li>
-                </ul>
-                <div className={performanceStyles.tabContainer}>
-                    <h3>{this.state.selectedFund}</h3>
-                    <div className={performanceStyles.chart}>
-                        {this.state.loaded ? this.chartContent() : (<div className={performanceStyles.loader}>Loading...</div>)}
+            <StaticQuery query = {graphql `
+            query {
+                funds: markdownRemark(fileAbsolutePath: {regex: "/performance/"}) {
+                    frontmatter {
+                        fund_1
+                        fund_2
+                        fund_3
+                    }
+                }
+            }
+        `    
+        } render = {data => (
+                <section className={performanceStyles.performance}>
+                    <div className="title-element">
+                        <div id="performance"/>
+                        <h2 className={performanceStyles.title}>Performance</h2>
                     </div>
-                </div>
-            </section>
+                    <ul className={performanceStyles.tabList}>
+                        <li onClick={(e) => {this.setActive(e)}} id="first_fund" data-active="true" data-key="0">{data.funds.frontmatter.fund_1}</li>
+                        <li onClick={(e) => {this.setActive(e)}} data-key="1">{data.funds.frontmatter.fund_2}</li>
+                        <li onClick={(e) => {this.setActive(e)}} data-key="2">{data.funds.frontmatter.fund_3}</li>
+                    </ul>
+                    <div className={performanceStyles.tabContainer}>
+                        <h3>{this.state.selectedFund}</h3>
+                        <div className={performanceStyles.chart}>
+                            {this.state.loaded ? this.chartContent() : (<div className={performanceStyles.loader}>Loading...</div>)}
+                        </div>
+                    </div>
+                </section>
+            )}
+        />
         )
     }
 }
