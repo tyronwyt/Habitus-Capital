@@ -87,12 +87,12 @@ const Legacy = () => (
                   </div>
               </div>)}
           </Slider>
-          <section className={legacyStyles.culture}>
+          {/* <section className={legacyStyles.culture}>
             <h2 className={legacyStyles.title}>Our Culture</h2>
             <div className={legacyStyles.video}>
                     <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="Placeholder video"></iframe>
             </div>
-          </section>
+          </section> */}
           <div className={legacyStyles.row}>
               <div className={`${legacyStyles.block} ${legacyStyles.black} ${legacyStyles.left}`} dangerouslySetInnerHTML={{__html: data.block_1.html}}></div>
               <div className={legacyStyles.block} style={{background: "url(" + aloe + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "none" }}></div>
