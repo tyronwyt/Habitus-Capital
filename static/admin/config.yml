@@ -102,6 +102,18 @@ collections:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
 
+  - name: performance
+    label: "Performance Section"
+    files: 
+      - label: "Fund Names"
+        name: "fund_names"
+        file: "site/content/performance/performance.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { name: fund_1, label: Fund 1, widget: string }
+          - { name: fund_2, label: Fund 2, widget: string }
+          - { name: fund_3, label: Fund 3, widget: string }
+
   - name: contact
     label: "Contact Section"
     files:
