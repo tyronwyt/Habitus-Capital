@@ -41,6 +41,12 @@ class InvestorForm extends Component {
                     <p>
                         <input type="email" name="email" placeholder="Email"/>
                     </p>
+                    <p>Send me information on:</p>
+                    <p>
+                        <label><input type="checkbox" name="leveraged_futures_fund"/> Leveraged Futures Fund</label><br/>
+                        <label><input type="checkbox" name="momentum_macro_fund"/> Momentum Macro Fund</label><br/>
+                        <label><input type="checkbox" name="quantitative_automated_fund"/> Quantitative Automated Fund</label><br/>
+                    </p>
                     <p>
                         <label><input type="checkbox" name="accept_terms"/> I accept the terms and conditions</label>
                     </p>
