@@ -35,7 +35,7 @@ const Layout = ({children}) => (
                         <label><input type="checkbox" name="quantitative_automated_fund"/> Quantitative Automated Fund</label><br/>
                     </p>
                     <p>
-                        <label><input type="checkbox" name="accept_terms"/> I accept the terms and conditions</label>
+                        <label><input type="checkbox" required name="accept_terms"/> I accept the terms and conditions</label>
                     </p>
                     <p>
                         <button type="submit">Submit</button>
