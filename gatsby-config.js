@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        address: `Office 7, 35-37 Ludgate Hill, London, EC4M7JN`,
+        address: `Nu, 10-12 Fulham High Street, London, SW63LQ`,
         email: `enquiry@habituscapital.com`,
         telephone: `N/A`,
     },
