@@ -117,6 +117,15 @@ collections:
   - name: contact
     label: "Contact Section"
     files:
+      - label: "Contact Details"
+        name: "contact_details"
+        file: "site/content/contact/contact_details.md"
+        fields:
+          - { name: data, label: Data, widget: date }
+          - { name: address, label: Address, widget: text }
+          - { name: number, label: Contact Number, widget: string }
+          - { name: email, label: Email Address, widget: string }
+
       - label: "Block 1"
         name: "block_1"
         extenstion: markdown
