@@ -1,8 +1,10 @@
 import React, { Component } from "react"
 import { HorizontalBar } from "react-chartjs-2"
 import { graphql, StaticQuery } from "gatsby"
+import 'chartjs-plugin-datalabels'
 
 import performanceStyles from "./performance.module.scss"
+import { endianness } from "os";
 
 class Performance extends Component {
     constructor(props) {
@@ -77,9 +79,18 @@ class Performance extends Component {
                             gridLines: false,
                             ticks: {
                                 beginAtZero: true
+                            }
+                        }]
+                    }, 
+                    plugins: {
+                        datalabels: {
+                            color: 'black',
+                            anchor: 'end',
+                            align: 'right',
+                            formatter: (value, context) => { return value + "%"}
                         }
-                    }]
-                }}}
+                    } 
+                }}
             />
         )
     }
