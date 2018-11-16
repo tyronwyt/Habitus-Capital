@@ -14,12 +14,12 @@ const Footer = () => (
     <StaticQuery
     query={graphql`
       query {
-        site {
-          siteMetadata {
+        contact: markdownRemark(fileAbsolutePath: {regex: "/contact_details.md/"}) {
+            frontmatter {
             address
+            number
             email
-            telephone
-          }
+            } 
         }
       }
     `
@@ -39,9 +39,9 @@ const Footer = () => (
                             <img src={linkedin} alt="Linkedin"/>
                         </a>
                     </div>
-                    <p><strong>Address:</strong> {data.site.siteMetadata.address}<br/>
-                    <strong>Email:</strong> {data.site.siteMetadata.email}<br/>
-                    <strong>Telephone:</strong> {data.site.siteMetadata.telephone}</p>
+                    <p className={footerStyles.contactDetails}><strong>Address:</strong> {data.contact.frontmatter.address}<br/>
+                    <strong>Email:</strong> <a href={data.contact.frontmatter.email}>{data.contact.frontmatter.email}</a><br/>
+                    <strong>Telephone:</strong> {data.contact.frontmatter.number}</p>
                     <p>&copy; {year} Habitus Capital Limited | All Rights Reserved</p>
                 </div>
                 <div className={footerStyles.logo}>

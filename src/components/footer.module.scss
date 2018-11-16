@@ -36,6 +36,19 @@
     margin-right: 15px;
 }
 
+.contactDetails a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.contactDetails a:hover {
+    color: #ba816e;
+}
+
+.contactDetails a:visted {
+    color: white;
+}
+
 @media (min-width: 768px) {
     .wrapper {
         max-width: 80%;
