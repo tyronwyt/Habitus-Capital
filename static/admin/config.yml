@@ -101,6 +101,13 @@ collections:
         fields:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
+      
+      - label: "Disclaimer"
+        name: "disclaimer"
+        file: "site/content/investing/disclaimer.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { name: disclaimer, label: Disclaimer, widget: text }
 
   - name: performance
     label: "Performance Section"
