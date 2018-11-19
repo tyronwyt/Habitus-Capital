@@ -12,8 +12,9 @@
 .tabList {
     width: 80%;
     list-style: none;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
     padding: 0;
+    color: white;
 }
 
 .tabList li {
@@ -21,12 +22,18 @@
     padding: 10px;
     cursor: pointer;
     transition: all .2s;
+    background-color: #307968;
+    margin-right: 10px;
 }
 
 .tabList li[data-active="true"],
 .tabList li:hover {
-    color: #ba816e;
-    text-decoration: underline
+
+    background-color: #ba816e;
+}
+
+.tabList li:after {
+  content: " \2304"
 }
 
 .tabContainer {
