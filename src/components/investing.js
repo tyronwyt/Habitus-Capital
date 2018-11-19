@@ -46,6 +46,11 @@ class Investing extends Component {
                 block_4: markdownRemark(fileAbsolutePath: {regex: "/investing_4/"}) {
                     html
                 }
+                investing: markdownRemark(fileAbsolutePath: {regex: "/investing/disclaimer.md/"}) {
+                    frontmatter {
+                        disclaimer
+                    }
+                }
             }
         `    
         }
@@ -65,6 +70,7 @@ class Investing extends Component {
                         <div className={investingStyles.button} onClick={this.onClickHandler}>Fund Enquiry</div>
                     </div>
                 </div>
+                {data.investing.frontmatter.disclaimer ? <div className={investingStyles.row}><p>{data.investing.frontmatter.disclaimer}</p></div> : null}
                 {/* Inject the modal to load here */}
                 {this.showModal()}
             </section>
