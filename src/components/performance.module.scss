@@ -18,12 +18,13 @@
 }
 
 .tabList li {
-    display: inline;
+    display: block;
     padding: 10px;
     cursor: pointer;
     transition: all .2s;
     background-color: #307968;
-    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 240px;
 }
 
 .tabList li[data-active="true"],
@@ -42,6 +43,10 @@
     box-shadow: 2px 2px 5px 0px (rgba(0,0,0,0.5));
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.tabContainer h3 {
+  margin-top: 0;
 }
 
 .chart {
@@ -107,5 +112,16 @@
   }
   40% {
     box-shadow: 0 2.5em 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabList li {
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s;
+    background-color: #307968;
+    margin-right: 10px;
   }
 }
