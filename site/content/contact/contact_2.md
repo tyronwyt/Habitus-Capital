@@ -1,12 +1,19 @@
 ---
-date: 2018-10-18T14:47:21.356Z
+date: 2018-10-18T14:47:45.036Z
+social:
+  - image: /assets/twitter.svg
+    name: Twitter
+    text: |-
+      @habituscapital
+      #Habitus
+    url: 'https://twitter.com/HabitusCapital'
+  - image: /assets/youtube.svg
+    name: YouTube
+    text: Habitus Capital
+    url: 'https://youtube.com'
+  - image: /assets/linkedin.svg
+    name: LinkedIn
+    text: Habitus Capital
+    url: 'https://linkedin.com'
 ---
-### General Enquiries
 
-(Button Goes here)
-
-### Contact Details
-
-**Address:** Nu, 10-12 Fulham High Street, London, SW63LQ <br/>
-**Email:** <mailto:enquiry@habituscapital.com> <br/>
-**Telephone:** N/A

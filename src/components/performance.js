@@ -4,7 +4,6 @@ import { graphql, StaticQuery } from "gatsby"
 import 'chartjs-plugin-datalabels'
 
 import performanceStyles from "./performance.module.scss"
-import { endianness } from "os";
 
 class Performance extends Component {
     constructor(props) {

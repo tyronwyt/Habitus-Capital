@@ -141,16 +141,9 @@ collections:
           - { name: date, label: Date, widget: date }
           - { label: Body, name: body, widget: markdown }
 
-      - label: "Block 2"
-        name: "block_2"
-        file: "site/content/contact/contact_2.md"
-        fields:
-          - { name: date, label: Date, widget: date }
-          - { label: Body, name: body, widget: markdown }
-
       - label: "Social Media Block"
         name: "social_media"
-        file: "site/content/contact/contact_3.md"
+        file: "site/content/contact/contact_2.md"
         fields:
           - { name: date, label: Date, widget: date }
           - { name: social, label: Social Accounts, widget: list, fields: [{name: name, label: Social Acc. Name, widget: string}, {name: image, label: Image, widget: image}, {name: text, label: Link Text, widget: text}, {name: url, label: URL, widget: text}]}
