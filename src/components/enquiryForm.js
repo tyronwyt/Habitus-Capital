@@ -29,8 +29,8 @@ class EnquiryForm extends Component {
             onClick={this.modalHandler}
             ></div>
             <div className={investorStyles.formWrapper}>
-                <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
+                <form name="generalEnquiry" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="generalEnquiry" />
                     <h3>Submit an Enquiry</h3>
                     <p>
                         <input type="text" name="first_name" placeholder="First Name"/>

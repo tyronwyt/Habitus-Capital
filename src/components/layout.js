@@ -16,9 +16,9 @@ const Layout = ({children}) => (
         <Header/>
         {children}
         <Footer/>
-        <form name="contact" method="POST" data-netlify="true" style={{display: "none"}}>
-                <input type="hidden" name="form-name" value="contact" />
-                    <h3>Request a prospectus</h3>
+        <form name="fundEnquiry" method="POST" data-netlify="true" style={{display: "none"}}>
+                <input type="hidden" name="form-name" value="fundEnquiry" />
+                    <h3>Request Fund Overview</h3>
                     <p>
                         <input type="text" name="first_name" placeholder="First Name"/>
                     </p>
@@ -41,8 +41,8 @@ const Layout = ({children}) => (
                         <button type="submit">Submit</button>
                     </p>
         </form>
-        <form name="contact" method="POST" data-netlify="true" style={{display: "none"}}>
-                <input type="hidden" name="form-name" value="contact" />
+        <form name="generalEnquiry" method="POST" data-netlify="true" style={{display: "none"}}>
+                <input type="hidden" name="form-name" value="generalEnquiry" />
                     <h3>Enquiry</h3>
                     <p>
                         <input type="text" name="first_name" placeholder="First Name"/>
