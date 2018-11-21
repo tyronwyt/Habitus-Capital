@@ -61,8 +61,12 @@
     padding: 5px 0px;
 }
 
+#logo {
+    display: none;
+}
+
 .logo img {
-    width: 150px;
+    width: 140px;
     transition: all .2s;
 }
 
@@ -123,7 +127,6 @@
     transform: rotate(45deg) translate(-6px, -8px);
 }
 
-
 @media (min-width: 768px) {
     .header .wrapper {
         max-width: 80%;
@@ -151,5 +154,14 @@
 
     .flair {
         left: 10%;
+    }
+}
+
+@media (min-width: 850px) {
+    #logo {
+        display: inline;
+    }
+    #logoText {
+        display: none;
     }
 }

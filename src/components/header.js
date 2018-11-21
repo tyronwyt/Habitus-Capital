@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 
 import headerStyles from "./header.module.scss"
 
-import logo from "../assets/images/logo_text.png"
+import logo from "../assets/images/logo.png"
+import logoText from "../assets/images/logo_text.png"
 import lock from "../assets/images/lock.svg"
 
 class Header extends Component {
@@ -53,7 +54,8 @@ class Header extends Component {
             <div className={headerStyles.top}>
                 <div className={headerStyles.wrapper}>
                     <div className={headerStyles.logo}>
-                    <Link to="/"><img id="logo" src={logo} alt="Habitus Capital" /></Link>
+                    <Link to="/"><img id={headerStyles.logo} src={logo} alt="Habitus Capital" /></Link>
+                    <Link to="/"><img id={headerStyles.logoText} src={logoText} alt="Habitus Capital" /></Link>
                     </div>
                     <div className={`${headerStyles.hamburgerIcon}`} data-toggled={this.state.navIsToggledOn ? 'true' : 'false' } onClick={this.handleNavToggle}>
                         <div className={headerStyles.bar1}></div>
