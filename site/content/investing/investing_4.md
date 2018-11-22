@@ -8,5 +8,5 @@ date: 2018-10-18T13:23:28.149Z
 * Our constant search for efficiencies
 * Our process of extracting consistent marginal gains
 
-**_Should you wish to receive more information about our funds, please submit your details below_
+**_Should you wish to be informed, once we open our funds to investors, please submit your details_
 **
