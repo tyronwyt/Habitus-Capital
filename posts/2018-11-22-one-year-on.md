@@ -3,13 +3,14 @@ date: 2018-11-20T15:24:33.006Z
 title: One Year On
 thumbnail: /assets/habitus-capital-rose-gold-logo-with-dark-background-3d-19-num.png
 ---
-The concept of Habitus Capital was stumbled upon whilst aboard a small sailing boat, underneath the sunny Bavarian skies at the base of the picturesque Austrian Mountains. Four millennials envisioned a future, that would set in motion the foundations of this one-year old company. These foundations are engraved in our Purpose Statement and are the very essence of what Habitus Capital stands for.
+
+The concept of Habitus Capital was stumbled upon whilst aboard a small sailing boat, underneath the sunny Bavarian skies at the base of the picturesque Austrian Mountains. Four millennials envisioned a future, that would set in motion the foundations of this one-year old company. These foundations are engraved in our Purpose Statement and are the very essence of what Habitus Capital stands for.
 
 **Habitus Capital Purpose:** To build an exclusive team of talented individuals that share a common ideology and create a unique cultural identity through practiced habits. 
 
 
 
-**The Past;**
+**The Past;**
 
 This past year, can be likened to that of a maze. The number of times we have hit an impasse to be turned 180 degrees in search of the next best option, is countless. However, with every ‘wall’ we have encountered, we have been gifted with the opportunity to learn and grow, culminating in a year of countless, invaluable lessons. When your sole objective is to create a future that doesn’t yet exist, a few speed-bumps along the way, is built into the design.
 
@@ -19,9 +20,10 @@ Habitus Capital is a cultural fund. We invest in our people and you invest in ou
 
 
 
-**The Present\;**
+**The Present;**
 
-The fund has performed well this year. PROGRESS, is the best way to describe our collective effort. At every impasse we are accumulating marginal gains. Whilst we have built a number of impressive trading tools this year. Our Cultural Identity Tool is by far the most unique and cherished. In summation, this tool ensures we practice what we preach. Our name, Habitus, stems from the Latin word Habit. It is thus fitting that we have created a tool to habitually practice the very processes that will one day define our success. 
+
+The fund has performed well this year. PROGRESS, is the best way to describe our collective effort. At every impasse we are accumulating marginal gains. Whilst we have built a number of impressive trading tools this year. Our Cultural Identity Tool is by far the most unique and cherished. In summation, this tool ensures we practice what we preach. Our name, Habitus, stems from the Latin word Habit. It is thus fitting that we have created a tool to habitually practice the very processes that will one day define our success. 
 
 This tool ensures we are accountable to each other. It enforces a corrective feedback loop that allows us to harness proactive solutions for every error that is automatically captured. This tool delegates responsibility and creativity to individual team members by granting a cultural portfolio to each of our members. Lastly this tool allows for honest reflection; as individuals and as team-mates. 
 
@@ -29,7 +31,7 @@ Our greatest asset is not the fancy systems, nor the individual brilliance. Rath
 
 
 
-**The Future\;**
+**The Future;**
 
 2019 will be a year of continued, exciting PROGRESS. Numerous doors will be unlocked as we continue to strive toward efficiency, optimisation and consistency all within our current cultural frame-work. Some exciting highlights of year two at Habitus Capital will include;
 
@@ -45,7 +47,7 @@ Our greatest asset is not the fancy systems, nor the individual brilliance. Rath
 
 ****
 
-**Consistent Evolution**
+**Consistent Evolution**
 
 We will continue to adopt our instinctive habits and evolve with time, ultimately insuring continued, high-performance. It is thus fitting to finish off by quoting the inspiring Mr Ray Dalio.
 
