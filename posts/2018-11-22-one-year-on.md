@@ -5,7 +5,7 @@ thumbnail: /assets/habitus-capital-rose-gold-logo-with-dark-background-3d-19-num
 ---
 The concept of Habitus Capital was stumbled upon whilst aboard a small sailing boat, underneath the sunny Bavarian skies at the base of the picturesque Austrian Mountains. Four millennials envisioned a future, that would set in motion the foundations of this one-year old company. These foundations are engraved in our Purpose Statement and are the very essence of what Habitus Capital stands for.
 
-**Habitus Capital Purpose: **To build an exclusive team of talented individuals that share a common ideology and create a unique cultural identity through practiced habits. 
+**Habitus Capital Purpose:** To build an exclusive team of talented individuals that share a common ideology and create a unique cultural identity through practiced habits. 
 
 
 
