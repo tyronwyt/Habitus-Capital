@@ -9,7 +9,7 @@ thumbnail: /assets/habitus-capital-rose-gold-logo-with-dark-background-3d-19-num
 
 
 
-**The Past; **
+**The Past;**
 
 This past year, can be likened to that of a maze. The number of times we have hit an impasse to be turned 180 degrees in search of the next best option, is countless. However, with every ‘wall’ we have encountered, we have been gifted with the opportunity to learn and grow, culminating in a year of countless, invaluable lessons. When your sole objective is to create a future that doesn’t yet exist, a few speed-bumps along the way, is built into the design.
 
@@ -19,7 +19,7 @@ Habitus Capital is a cultural fund. We invest in our people and you invest in ou
 
 
 
-**The Present; **
+**The Present;**
 
 The fund has performed well this year. PROGRESS, is the best way to describe our collective effort. At every impasse we are accumulating marginal gains. Whilst we have built a number of impressive trading tools this year. Our Cultural Identity Tool is by far the most unique and cherished. In summation, this tool ensures we practice what we preach. Our name, Habitus, stems from the Latin word Habit. It is thus fitting that we have created a tool to habitually practice the very processes that will one day define our success. 
 
