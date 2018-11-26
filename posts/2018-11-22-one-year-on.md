@@ -19,7 +19,7 @@ Habitus Capital is a cultural fund. We invest in our people and you invest in ou
 
 
 
-**The Present;**
+**The Present\;**
 
 The fund has performed well this year. PROGRESS, is the best way to describe our collective effort. At every impasse we are accumulating marginal gains. Whilst we have built a number of impressive trading tools this year. Our Cultural Identity Tool is by far the most unique and cherished. In summation, this tool ensures we practice what we preach. Our name, Habitus, stems from the Latin word Habit. It is thus fitting that we have created a tool to habitually practice the very processes that will one day define our success. 
 
@@ -29,7 +29,7 @@ Our greatest asset is not the fancy systems, nor the individual brilliance. Rath
 
 
 
-**The Future;**
+**The Future\;**
 
 2019 will be a year of continued, exciting PROGRESS. Numerous doors will be unlocked as we continue to strive toward efficiency, optimisation and consistency all within our current cultural frame-work. Some exciting highlights of year two at Habitus Capital will include;
 
