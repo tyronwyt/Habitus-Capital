@@ -83,6 +83,21 @@
     background: #46b299;
     color: #fff;
 }
+.pagination {
+    text-align: center;
+}
+
+.pageButtons {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pageButtons:hover {
+    color: #ba816e;
+    text-decoration: underline;
+}
+
+
 
 @media (min-width: 600px) {
     .postContainer {
