@@ -3,12 +3,6 @@
     margin: 3em auto 4em auto;
 }
 
-.title {
-    max-width: 80%;
-    margin: 0 auto 2em auto;
-    border-bottom: 2px solid #ba816e;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -47,10 +41,8 @@
 }
 
 @media (min-width: 768px) {
-    .title, .row {
-        max-width: 80%;
-    }
     .row {
+        max-width: 80%;
         flex-wrap: wrap;
         margin: 0 auto;
         justify-items: center;

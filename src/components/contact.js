@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import EnquiryForm from "./enquiryForm"
+import globalStyles from "./shared.module.scss"
 import contactStyles from "./contact.module.scss"
 import tree from "../assets/images/tree_960x350.jpg"
 
@@ -62,21 +63,21 @@ class Contact extends Component {
                 <section className={contactStyles.contact}>
                     <div className="title-element">
                         <div id="contact"/>
-                        <h2 className={contactStyles.title}>Contact Us</h2>
+                        <h2 className={globalStyles.title}>Contact Us</h2>
                     </div>
-                    <div className={contactStyles.row}>
-                        <div className={`${contactStyles.block} ${contactStyles.black} ${contactStyles.left}`} 
+                    <div className={globalStyles.row}>
+                        <div className={`${globalStyles.block} ${globalStyles.black} ${globalStyles.left}`}
                         dangerouslySetInnerHTML={{__html: data.block_1.html}}>
                         </div>
-                        <div className={contactStyles.block} 
+                        <div className={globalStyles.block}
                             style={{background: "url(" + tree + ")", 
                             backgroundSize: "cover", 
                             backgroundPosition: "center", 
                             backgroundRepeat: "none" }}>
                         </div>
                     </div>
-                    <div className={contactStyles.row}>
-                        <div className={`${contactStyles.block} ${contactStyles.left}`} style={{ background: "#307968", color: "#fff" }}>
+                    <div className={globalStyles.row}>
+                        <div className={`${globalStyles.block} ${globalStyles.left}`} style={{ background: "#307968", color: "#fff" }}>
                             <h2>General Enquiries</h2>
                             <div className={contactStyles.button} onClick={this.onClickHandler}>Submit Enquiry</div>
                             <h2>Contact Details</h2>
@@ -86,7 +87,7 @@ class Contact extends Component {
                                 <strong>Telephone:</strong> {data.contact.frontmatter.number}
                             </p>
                         </div>
-                        <div className={`${contactStyles.block} ${contactStyles.right} ${contactStyles.social}`}>
+                        <div className={`${globalStyles.block} ${globalStyles.right} ${contactStyles.social}`}>
                             <h3>Social Media</h3>
                             {data.block_2.frontmatter.social.map((item) => (
                                 <div key={item.name}><a href={item.url}><img src={item.image} alt={item.name} align="left" />{item.text}</a></div>
