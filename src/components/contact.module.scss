@@ -3,12 +3,6 @@
     margin: 0 auto;
 }
 
-.title {
-    max-width: 80%;
-    margin: 0 auto 2em auto;
-    border-bottom: 2px solid #ba816e;
-}
-
 .contact a {
     color: #ba816e;
     text-decoration: none;
@@ -16,23 +10,6 @@
 
 .contact a:hover {
     text-decoration: underline;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.block {
-    flex-basis: 100%;
-    padding: 50px;
-    box-sizing: border-box;
-    min-height: 300px;
-}
-
-.block.black {
-    background: #000;
-    color: #fff;
 }
 
 .social a {
@@ -59,7 +36,7 @@
     margin-right: 15px;
 }
 
-.row div.button {
+.button {
     background: #ba816e;
     text-align: center;
     padding: 10px 0;
@@ -70,26 +47,8 @@
     width: 200px;
 }
 
-
-.row div.button:hover {
+.button:hover {
     background: #94695b;
     text-align: center;
     padding: 10px 0;
-}
-
-@media (min-width: 768px) {
-    .title {
-        max-width: 80%;
-    }
-    .block {
-        flex-basis: 50%;  
-    }
-
-    .block.left {
-        padding-left: 10%; 
-    }
-
-    .block.right {
-        padding-right: 10%;
-    }
 }

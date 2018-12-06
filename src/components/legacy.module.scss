@@ -7,39 +7,16 @@
     padding: 0 0 2em 0;
 }
 
-.title {
-    max-width: 80%;
-    margin: 2em auto;
-    border-bottom: 2px solid #ba816e;
-}
+// .video {
+//     width: 80%;
+//     margin: 0 auto 4em auto;
+//     text-align: center;
+// }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.block {
-    flex-basis: 100%;
-    padding: 50px;
-    box-sizing: border-box;
-    min-height: 300px;
-}
-
-.block.black {
-    background: #000;
-    color: #fff;
-}
-
-.video {
-    width: 80%;
-    margin: 0 auto 4em auto;
-    text-align: center;
-}
-
-.video iframe {
-    width: 100%;
-    height: 300px;
-}
+// .video iframe {
+//     width: 100%;
+//     height: 300px;
+// }
 
 .marker {
     font-weight: 300;
@@ -50,12 +27,12 @@
     color: #ba816e;
 }
 
-.legacy .block h3 {
+.legacy h3 {
     position: relative;
     margin-left: 55px;
 }
 
-.legacy .block h3:before {
+.legacy h3:before {
     position: absolute;
     content: "Habitus Capital";
     color: #ba816e;
@@ -65,7 +42,7 @@
     left: -55px;
 }
 
-.legacy .block h3:after {
+.legacy h3:after {
     position: absolute;
     content: "/";
     color: #ba816e;
@@ -182,25 +159,11 @@
 }
 
 @media (min-width: 768px) {
-    .title {
-        max-width: 80%;
-    }
-    .block {
-        flex-basis: 50%;  
-    }
 
-    .block.left {
-        padding-left: 10%; 
-    }
-
-    .block.right {
-        padding-right: 10%;
-    }
-
-    .video iframe {
-        max-width: 80%;
-        height: 300px;
-    }
+    // .video iframe {
+    //     max-width: 80%;
+    //     height: 300px;
+    // }
 
     .slideContent {
         // margin-top: 250px;
@@ -226,16 +189,16 @@
     }
 }
 
-@media (min-width: 1000px) {
-    .video iframe {
-        max-width: 80%;
-        height: 450px;
-    }
-}
+// @media (min-width: 1000px) {
+//     .video iframe {
+//         max-width: 80%;
+//         height: 450px;
+//     }
+// }
 
-@media (min-width: 1300px) {
-    .video iframe {
-        max-width: 80%;
-        height: 450px;
-    }
-}
+// @media (min-width: 1300px) {
+//     .video iframe {
+//         max-width: 80%;
+//         height: 450px;
+//     }
+// }

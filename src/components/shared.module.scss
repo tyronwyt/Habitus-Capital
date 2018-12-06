@@ -1,0 +1,37 @@
+.title {
+    max-width: 80%;
+    margin: 0 auto 2em auto;
+    border-bottom: 2px solid #ba816e;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    flex-basis: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    min-height: 300px;
+}
+
+.block.black {
+    background: #000;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    
+    .block {
+        flex-basis: 50%;  
+    }
+    .block.left {
+        padding-left: 10%; 
+    }
+
+    .block.right {
+        padding-right: 10%;
+    }
+
+}

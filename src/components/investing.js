@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import InvestorForm from "./investorForm"
+import globalStyles from "./shared.module.scss"
 import investingStyles from "./investing.module.scss"
 
 class Investing extends Component {
@@ -59,7 +60,7 @@ class Investing extends Component {
             <section className={investingStyles.investing}>
                 <div className="title-element">
                     <div id="investing"/>
-                    <h2 className={investingStyles.title}>Investing</h2>
+                    <h2 className={globalStyles.title}>Investing</h2>
                 </div>
                 <div className={investingStyles.row}>
                     <div dangerouslySetInnerHTML={{__html: data.block_1.html}}></div>

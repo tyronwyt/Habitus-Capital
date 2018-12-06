@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 
+import globalStyles from "./shared.module.scss"
 import updateStyles from "./update.module.scss"
 
 function splitDate(date, output) {
@@ -107,7 +108,7 @@ class Update extends Component {
           <section className={updateStyles.update}>
             <div className="title-element">
               <div id="updates"/>
-              <h2 className={updateStyles.title}>Live Updates</h2>
+              <h2 className={globalStyles.title}>Live Updates</h2>
             </div>
               {this.renderPosts(data.allMarkdownRemark.edges).map(({ node }) => (
             <div key={node.id} className={updateStyles.postContainer}>

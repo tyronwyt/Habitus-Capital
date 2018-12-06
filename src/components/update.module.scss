@@ -3,12 +3,6 @@
     margin: 0 auto 5em auto;
 }
 
-.title {
-    max-width: 80%;
-    margin: 0 auto 2em auto;
-    border-bottom: 2px solid #ba816e;
-}
-
 .postContainer {
     display: flex;
     flex-direction: column;
@@ -129,15 +123,4 @@
         position: absolute;
         bottom: 0;
     }
-}
-
-
-@media (min-width: 768px) {
-    .title {
-        max-width: 80%;
-    }
-
-}
-
-@media (min-width: 1300px) {
 }

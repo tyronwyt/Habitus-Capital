@@ -3,6 +3,7 @@ import { HorizontalBar } from "react-chartjs-2"
 import { graphql, StaticQuery } from "gatsby"
 import 'chartjs-plugin-datalabels'
 
+import globalStyles from "./shared.module.scss"
 import performanceStyles from "./performance.module.scss"
 
 class Performance extends Component {
@@ -124,7 +125,7 @@ class Performance extends Component {
                 <section className={performanceStyles.performance}>
                     <div className="title-element">
                         <div id="performance"/>
-                        <h2 className={performanceStyles.title}>Performance</h2>
+                        <h2 className={globalStyles.title}>Performance</h2>
                     </div>
                     <ul className={performanceStyles.tabList}>
                         <li onClick={(e) => {this.setActive(e)}} id="first_fund" data-active="true" data-key="0">{data.funds.frontmatter.fund_1}</li>

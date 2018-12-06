@@ -4,7 +4,9 @@ import { graphql, StaticQuery } from "gatsby"
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
+import globalStyles from "./shared.module.scss"
 import legacyStyles from "./legacy.module.scss"
+
 import aloe from "../assets/images/aloe_960x350.png"
 import chameleon from "../assets/images/chameleon_960x350.png"
 import dandelion from "../assets/images/dandelion.jpg"
@@ -88,22 +90,22 @@ const Legacy = () => (
               </div>)}
           </Slider>
           {/* <section className={legacyStyles.culture}>
-            <h2 className={legacyStyles.title}>Our Culture</h2>
+            <h2 className={globalStyles.title}>Our Culture</h2>
             <div className={legacyStyles.video}>
                     <iframe src="https://www.youtube.com/embed/YGE5euSZnbI" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="Placeholder video"></iframe>
             </div>
           </section> */}
-          <div className={legacyStyles.row}>
-              <div className={`${legacyStyles.block} ${legacyStyles.black} ${legacyStyles.left}`} dangerouslySetInnerHTML={{__html: data.block_1.html}}></div>
-              <div className={legacyStyles.block} style={{background: "url(" + aloe + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "none" }}></div>
+          <div className={globalStyles.row}>
+              <div className={`${globalStyles.block} ${globalStyles.black} ${globalStyles.left}`} dangerouslySetInnerHTML={{__html: data.block_1.html}}></div>
+              <div className={globalStyles.block} style={{background: "url(" + aloe + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "none" }}></div>
           </div>
-          <div className={legacyStyles.row}>
-              <div className={`${legacyStyles.block} ${legacyStyles.left}`} style={{background: "url(" + chameleon + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "none" }}></div>
-              <div className={`${legacyStyles.block} ${legacyStyles.right}`} dangerouslySetInnerHTML={{__html: data.block_2.html}}></div>
+          <div className={globalStyles.row}>
+              <div className={`${globalStyles.block} ${globalStyles.left}`} style={{background: "url(" + chameleon + ")", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "none" }}></div>
+              <div className={`${globalStyles.block} ${globalStyles.right}`} dangerouslySetInnerHTML={{__html: data.block_2.html}}></div>
           </div>
-          <div className={legacyStyles.row}>
-              <div className={`${legacyStyles.block} ${legacyStyles.left}`} style={{ background: "#307968", color: "#fff" }} dangerouslySetInnerHTML={{__html: data.block_3.html}}></div>
-              <div className={`${legacyStyles.block} ${legacyStyles.right} ${legacyStyles.highlight}`} style={{ background: "#000", color: "#fff" }} dangerouslySetInnerHTML={{__html: data.block_4.html}}></div>
+          <div className={globalStyles.row}>
+              <div className={`${globalStyles.block} ${globalStyles.left}`} style={{ background: "#307968", color: "#fff" }} dangerouslySetInnerHTML={{__html: data.block_3.html}}></div>
+              <div className={`${globalStyles.block} ${globalStyles.right} ${legacyStyles.highlight}`} style={{ background: "#000", color: "#fff" }} dangerouslySetInnerHTML={{__html: data.block_4.html}}></div>
           </div>
       </section>
     )}
