@@ -3,6 +3,7 @@ module.exports = {
         address: `Nu, 10-12 Fulham High Street, London, SW63LQ`,
         email: `enquiry@habituscapital.com`,
         telephone: `N/A`,
+        siteUrl: `https://habituscapital.com/`
     },
     plugins: [
         `gatsby-plugin-netlify-cms`,
@@ -23,5 +24,6 @@ module.exports = {
                 path: `./site/content/`,
             },
         },
+        `gatsby-plugin-sitemap`,
     ],
 }
