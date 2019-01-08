@@ -32,6 +32,9 @@ class EnquiryForm extends Component {
                 <form name="generalEnquiry" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="generalEnquiry" />
                     <h3>Submit an Enquiry</h3>
+                    <p className={investorStyles.hidden}>
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <p>
                         <input type="text" name="first_name" placeholder="First Name"/>
                     </p>

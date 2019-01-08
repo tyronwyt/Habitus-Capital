@@ -32,6 +32,9 @@ class InvestorForm extends Component {
                 <form name="fundEnquiry" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="fundEnquiry" />
                     <h3>Request Fund Overview</h3>
+                    <p className={investorStyles.hidden}>
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <p>
                         <input type="text" name="first_name" placeholder="First Name"/>
                     </p>
@@ -50,7 +53,6 @@ class InvestorForm extends Component {
                     <p>
                         <label><input type="checkbox" required name="accept_terms"/> I accept the terms and conditions</label>
                     </p>
-                    <div data-netlify-recaptcha="true"></div>
                     <p>
                         <button type="submit">Submit</button>
                     </p>
