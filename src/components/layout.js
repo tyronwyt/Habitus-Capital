@@ -47,6 +47,7 @@ const Layout = ({children}) => (
                     <p>
                         <label><input type="checkbox" required name="accept_terms"/> I accept the terms and conditions</label>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
                     <p>
                         <button type="submit">Submit</button>
                     </p>
