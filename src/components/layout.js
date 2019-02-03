@@ -47,6 +47,7 @@ const Layout = ({children}) => (
                         <label><input type="checkbox" name="momentum_macro_fund"/> Momentum Macro Fund</label><br/>
                         <label><input type="checkbox" name="quantitative_automated_fund"/> Quantitative Automated Fund</label><br/>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
                     <p>
                         <label><input type="checkbox" required name="accept_terms"/> I accept the terms and conditions</label>
                     </p>
@@ -72,6 +73,7 @@ const Layout = ({children}) => (
                     <p>
                         <textarea name="enquiry" placeholder="Enqury"/>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
                     <p>
                         <label><input type="checkbox" required name="accept_terms"/> I accept the terms and conditions</label>
                     </p>

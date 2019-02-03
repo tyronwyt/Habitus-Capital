@@ -47,6 +47,7 @@ class EnquiryForm extends Component {
                     <p>
                         <textarea name="enquiry" placeholder="Enqury"/>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
                     <p>
                         <label><input type="checkbox" required name="accept_terms"/> I accept the terms and conditions</label>
                     </p>
