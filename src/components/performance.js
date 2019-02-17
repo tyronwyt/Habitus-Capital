@@ -12,8 +12,9 @@ class Performance extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedFundKey: "0",
+            selectedFundKey: "1",
             selectedFund: "",
+            selectedYear: '2019',
             loaded: false,
         };
 
@@ -21,16 +22,18 @@ class Performance extends Component {
         this.fetchChartData();
     }
 
-    chartData = [];
-    feedUrls = [
-        'https://spreadsheets.google.com/feeds/list/1UAhYsgzm2Qy4iuOx1hJt8RgMtjP1jaGmUvCid-oISAE/od6/public/basic?alt=json',
-        'https://spreadsheets.google.com/feeds/list/1NZM91sYM446Hry0H7stMnlalj4eCc-yAgDjF_TCMqrI/od6/public/basic?alt=json',
-        'https://spreadsheets.google.com/feeds/list/1969fIH-xw5DGl6HEexaX4orUyo4Q-fFVXaGggZJJBDA/od6/public/basic?alt=json'
-    ]
+    chartData = {2018: [], 2019: []};
+    feedUrls = { 
+        'googleSheet'   : "https://spreadsheets.google.com/feeds/list/",
+        2018            : '1weIgvn69BkApE5ZvGn5BuD8Uc2G0hIjju-Z7o0YX2WY/',
+        2019            : '1a-HOvPrK9M8MTz5TWHVZCquBRLgZNQztu-EIp4rJBFs/',
+        'append'        : '/public/basic?alt=json'
+        }
 
     fetchChartData() {
-        if (this.chartData[this.state.selectedFundKey] == null) {
-            fetch(this.feedUrls[this.state.selectedFundKey])
+        if (this.chartData[this.state.selectedYear][this.state.selectedFundKey] == null) {
+            let url = this.feedUrls.googleSheet + this.feedUrls[this.state.selectedYear] + this.state.selectedFundKey + this.feedUrls.append;
+            fetch(url)
             .then(response => {
                 return response.json()
             })
@@ -52,7 +55,7 @@ class Performance extends Component {
                         }
                     ]
                 }
-                this.chartData[this.state.selectedFundKey] = responseData;
+                this.chartData[this.state.selectedYear][this.state.selectedFundKey] = responseData;
                 this.setState({loaded: true});
             })
         } else { this.setState({loaded: true}); }      
@@ -61,7 +64,7 @@ class Performance extends Component {
     chartContent() {
         return (
             <HorizontalBar height={100}
-                data={this.chartData[this.state.selectedFundKey]}
+                data={this.chartData[this.state.selectedYear][this.state.selectedFundKey]}
                 options={{
                     scales: {
                         xAxes: [{
@@ -97,6 +100,17 @@ class Performance extends Component {
         e.currentTarget.setAttribute('data-active', "true");
     }
 
+    setYear(e) {
+        this.setState({loaded: false});
+        const yearList = e.currentTarget.parentNode.childNodes;
+        const selectedYear = e.currentTarget.innerHTML;
+        this.setState({selectedYear: selectedYear}, () => {this.fetchChartData();});
+        yearList.forEach(element => {
+            element.removeAttribute('data-active');
+        });
+        e.currentTarget.setAttribute('data-active', "true");
+    }
+
     render() {
         return (
             <StaticQuery query = {graphql `
@@ -116,10 +130,14 @@ class Performance extends Component {
                         <div id="performance"/>
                         <h2 className={globalStyles.title}>Performance</h2>
                     </div>
+                    <ul className={performanceStyles.tabYear}>
+                        <li data-active="true" onClick={(e) => {this.setYear(e)}}>2019</li>
+                        <li onClick={(e) => {this.setYear(e)}}>2018</li>
+                    </ul>
                     <ul className={performanceStyles.tabList}>
-                        <li onClick={(e) => {this.setActive(e)}} id="first_fund" data-active="true" data-key="0">{data.funds.frontmatter.fund_1}</li>
-                        <li onClick={(e) => {this.setActive(e)}} data-key="1">{data.funds.frontmatter.fund_2}</li>
-                        <li onClick={(e) => {this.setActive(e)}} data-key="2">{data.funds.frontmatter.fund_3}</li>
+                        <li onClick={(e) => {this.setActive(e)}} id="first_fund" data-active="true" data-key="1">{data.funds.frontmatter.fund_1}</li>
+                        <li onClick={(e) => {this.setActive(e)}} data-key="2">{data.funds.frontmatter.fund_2}</li>
+                        <li onClick={(e) => {this.setActive(e)}} data-key="3">{data.funds.frontmatter.fund_3}</li>
                     </ul>
                     <div className={performanceStyles.tabContainer}>
                         <h3>{this.state.selectedFund}</h3>

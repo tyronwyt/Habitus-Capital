@@ -3,7 +3,7 @@
     margin: 0 auto 5em auto;
 }
 
-.tabList {
+.tabList, .tabYear {
     width: 80%;
     list-style: none;
     margin: 0 auto 20px auto;
@@ -11,7 +11,7 @@
     color: white;
 }
 
-.tabList li {
+.tabList li, .tabYear li {
     display: block;
     padding: 10px;
     cursor: pointer;
@@ -22,13 +22,21 @@
 }
 
 .tabList li[data-active="true"],
-.tabList li:hover {
-
+.tabList li:hover,
+.tabYear li[data-active="true"],
+.tabYear li:hover {
     background-color: #ba816e;
 }
 
 .tabList li:after {
   content: " \2304"
+}
+
+.tabYear li{
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  padding: 10px 30px;
 }
 
 .tabContainer {
