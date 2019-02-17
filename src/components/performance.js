@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import { HorizontalBar } from "react-chartjs-2"
 import { graphql, StaticQuery } from "gatsby"
+import fetch from "isomorphic-fetch"
 import 'chartjs-plugin-datalabels'
+
 
 import globalStyles from "./shared.module.scss"
 import performanceStyles from "./performance.module.scss"
