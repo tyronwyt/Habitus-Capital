@@ -15,6 +15,6 @@ social:
   - image: /assets/linkedin.svg
     name: LinkedIn
     text: Habitus Capital
-    url: 'https://www.linkedin.com/company'
+    url: 'https://www.linkedin.com/company/14052845'
 ---
 
