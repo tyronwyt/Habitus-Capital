@@ -10,7 +10,8 @@ social:
   - image: /assets/youtube.svg
     name: YouTube
     text: Habitus Capital
-    url: 'https://youtube.com'
+    url: >-
+      https://www.youtube.com/channel/UC3t2pTWL0DyY-YjEcydovYw?view_as=subscriber
   - image: /assets/linkedin.svg
     name: LinkedIn
     text: Habitus Capital
