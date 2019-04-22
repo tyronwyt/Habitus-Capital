@@ -1,6 +1,6 @@
 ---
 date: 2018-11-20T15:24:33.006Z
-title: One Year On
+title: The First Year of Habitus Capital
 thumbnail: /assets/habitus-capital-rose-gold-logo-with-dark-background-3d-19-num.png
 ---
 
