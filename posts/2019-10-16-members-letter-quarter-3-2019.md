@@ -1,5 +1,5 @@
 ---
-date: 2019-10-16T14:36:46.863Z
+date: 2019-10-01T14:36:46.863Z
 title: 'Members'' Letter-Quarter 4, 2019'
 thumbnail: /assets/image-for-investor-letter.png
 ---
