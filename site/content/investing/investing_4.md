@@ -3,10 +3,10 @@ date: 2018-10-18T13:23:28.149Z
 ---
 ### Our Edges
 
-* Our automated processes of evolving through failures
-* Our revolutionary risk management tools
-* Our constant search for efficiencies
-* Our process of extracting consistent marginal gains
+* Our automated model 
+* Our pursuit of extracting strengths found within discretionary and non-discretionary trading
+* Our focus on risk-management combined with asymmetrical strategies
+* Our trading environment and culture
 
 **_Should you wish to be informed, once we open our funds to investors, please submit your details_
 **
