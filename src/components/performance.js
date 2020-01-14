@@ -14,7 +14,7 @@ class Performance extends Component {
         this.state = {
             selectedFundKey: "1",
             selectedFund: "",
-            selectedYear: '2019',
+            selectedYear: '2020',
             loaded: false,
         };
 
@@ -22,11 +22,12 @@ class Performance extends Component {
         this.fetchChartData();
     }
 
-    chartData = {2018: [], 2019: []};
+    chartData = {2018: [], 2019: [], 2020: []};
     feedUrls = { 
         'googleSheet'   : "https://spreadsheets.google.com/feeds/list/",
         2018            : '1weIgvn69BkApE5ZvGn5BuD8Uc2G0hIjju-Z7o0YX2WY/',
         2019            : '1a-HOvPrK9M8MTz5TWHVZCquBRLgZNQztu-EIp4rJBFs/',
+        2020            : '1RwnT8a3T-jWtzdMS4l1YO9vV1zHAVp54qgHvGR9XMpY/',
         'append'        : '/public/basic?alt=json'
         }
 
@@ -131,7 +132,8 @@ class Performance extends Component {
                         <h2 className={globalStyles.title}>Performance</h2>
                     </div>
                     <ul className={performanceStyles.tabYear}>
-                        <li data-active="true" onClick={(e) => {this.setYear(e)}}>2019</li>
+                        <li data-active="true" onClick={(e) => {this.setYear(e)}}>2020</li>
+                        <li onClick={(e) => {this.setYear(e)}}>2019</li>
                         <li onClick={(e) => {this.setYear(e)}}>2018</li>
                     </ul>
                     <ul className={performanceStyles.tabList}>
