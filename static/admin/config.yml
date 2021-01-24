@@ -121,6 +121,36 @@ collections:
           - { name: fund_2, label: Fund 2, widget: string }
           - { name: fund_3, label: Fund 3, widget: string }
 
+  - name: perfomance_tables
+    label: "Performance Tables"
+    folder: "performance"
+    create: true
+    slug: "Perfomance/{{slug}}"
+    fields:
+      - { name: fund_name, label: Fund Name, widget: string }
+      - label: Years
+        label_singular: "Fund Year"
+        name: "year"
+        widget: list
+        fields:
+          - {label: Year, name: year, widget: number}
+          - label: "months"
+            name: months
+            widget: object
+            fields:
+              - {name: percentage-01, label: Jan %, widget: number, default: 0}
+              - {name: percentage-02, label: Feb %, widget: number, default: 0}
+              - {name: percentage-03, label: Mar %, widget: number, default: 0}
+              - {name: percentage-04, label: Apr %, widget: number, default: 0}
+              - {name: percentage-05, label: May %, widget: number, default: 0}
+              - {name: percentage-06, label: Jun %, widget: number, default: 0}
+              - {name: percentage-07, label: Jul %, widget: number, default: 0}
+              - {name: percentage-08, label: Aug %, widget: number, default: 0}
+              - {name: percentage-09, label: Sep %, widget: number, default: 0}
+              - {name: percentage-10, label: Oct %, widget: number, default: 0}
+              - {name: percentage-11, label: Nov %, widget: number, default: 0}
+              - {name: percentage-12, label: Dec %, widget: number, default: 0}
+
   - name: contact
     label: "Contact Section"
     files:
