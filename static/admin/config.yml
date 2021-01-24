@@ -123,9 +123,9 @@ collections:
 
   - name: perfomance_tables
     label: "Performance Tables"
-    folder: "performance"
+    folder: "site/content/performance"
     create: true
-    slug: "Perfomance/{{slug}}"
+    slug: "{{fund_name}}"
     fields:
       - { name: fund_name, label: Fund Name, widget: string }
       - label: Years
