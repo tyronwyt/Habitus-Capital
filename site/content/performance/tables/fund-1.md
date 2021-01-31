@@ -2,18 +2,18 @@
 fund_name: Leveraged Futures Fund
 year:
   - months:
-      percentage-3: 92
-      percentage-4: -30
-      percentage-5: 11
-      percentage-6: 30
-      percentage-7: 49
-      percentage-8: 0
-      percentage-9: 0
-      percentage-10: 0
-      percentage-11: 0
-      percentage-12: 0
-      percentage-1: 20
-      percentage-2: 42
+      percentage-3: 125.33
+      percentage-4: 3.18
+      percentage-5: 18.79
+      percentage-6: 12.44
+      percentage-7: -0.5
+      percentage-8: -1.19
+      percentage-9: 0.07
+      percentage-10: 2.97
+      percentage-11: 3.76
+      percentage-12: -1.07
+      percentage-1: 8.22
+      percentage-2: 12.7
     year: 2020
   - months:
       percentage-3: -1.31
