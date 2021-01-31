@@ -1,18 +1,18 @@
 ---
-fund_name: Fund 1
+fund_name: Leveraged Futures Fund
 year:
   - months:
-      percentage-3: -5
-      percentage-4: 20
-      percentage-5: 40
-      percentage-6: -15
-      percentage-7: 120
-      percentage-8: -80
-      percentage-9: 30
-      percentage-10: 65
-      percentage-11: 2
-      percentage-12: 1
-      percentage-1: 1
+      percentage-3: -1.31
+      percentage-4: 1.17
+      percentage-5: -2.96
+      percentage-6: -0.02
+      percentage-7: 8.53
+      percentage-8: -0.02
+      percentage-9: 11.58
+      percentage-10: 32.02
+      percentage-11: 8.86
+      percentage-12: 2.32
+      percentage-1: -7.6
       percentage-2: 2
     year: 2019
   - months:
