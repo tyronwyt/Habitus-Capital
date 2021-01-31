@@ -21,10 +21,15 @@
     width: 240px;
 }
 
+
 .tabList li[data-active="true"],
 .tabList li:hover,
 .tabYear li[data-active="true"],
 .tabYear li:hover {
+    background-color: #ba816e;
+}
+
+.active {
     background-color: #ba816e;
 }
 

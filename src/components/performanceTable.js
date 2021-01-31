@@ -1,3 +1,125 @@
+import React, { useState } from 'react'
+import { useStaticQuery, graphql } from "gatsby"
+import { HorizontalBar } from "react-chartjs-2"
+import 'chartjs-plugin-datalabels'
+
+import globalStyles from "./shared.module.scss"
+import performanceTableStyles from "./performanceTable.module.scss"
+
+export default () => {
+    const data = useStaticQuery(graphql`
+        query tableData {
+            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/performance/tables/"}}) {
+                edges {
+                  node {
+                    id
+                    frontmatter {
+                      fund_name
+                      year {
+                        year
+                        months {
+                          percentage_1
+                          percentage_2
+                          percentage_3
+                          percentage_4
+                          percentage_5
+                          percentage_6
+                          percentage_7
+                          percentage_8
+                          percentage_9
+                          percentage_10
+                          percentage_11
+                          percentage_12
+                        }
+                      }
+                    }
+                    fileAbsolutePath
+                  }
+                }
+            }
+        }
+    `)
+
+    const [selectedFund, setSelectecFund] = useState(0)
+    const [selectedYear, setSelectedYear] = useState(0)
+
+    const handleActiveFund = (id) => {
+        setSelectecFund(id);
+        setSelectedYear(0);
+    }
+
+    const handleActiveYear = (id) => {
+        setSelectedYear(id);
+    }
+
+    const chartContent = () => {
+        const data1 = Object.values(funds[selectedFund].node.frontmatter.year[selectedYear].months);
+        console.log(data1);
+        const data = {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            datasets: [
+              {
+                label: '% Return on Capital m/m',
+                backgroundColor: "#307968",
+                data: data1
+              }
+            ]
+          };
+        return (
+            <HorizontalBar height={100}
+                data={data}
+                options={{
+                    scales: {
+                        xAxes: [{
+                            gridLines: false,
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }, 
+                    plugins: {
+                        datalabels: {
+                            color: 'black',
+                            anchor: 'end',
+                            align: 'right',
+                            formatter: (value, context) => { return value + "%"}
+                        }
+                    } 
+                }}
+            />
+        )
+    }
+
+    const funds = data.allMarkdownRemark.edges;
+
+    return (
+        <section className={performanceTableStyles.performance}>
+            <div className="title-element">
+                <div id="performance"/>
+                <h2 className={globalStyles.title}>Performance</h2>
+            </div>
+            <ul className={performanceTableStyles.tabList}>
+                {funds.map((fund, index) => {
+                    return (
+                        <li key={index} data-active={index === selectedFund ? 'true' : 'false'} id={`fund-${index}`} onClick={()=>handleActiveFund(index)}>{fund.node.frontmatter.fund_name}</li>
+                    )
+                })}
+            </ul>
+            <ul className={performanceTableStyles.tabList}>
+                {funds[selectedFund].node.frontmatter.year.map((year, index) => {
+                    return (
+                    <li key={index} data-active={index === selectedYear ? 'true' : 'false'} onClick={()=>handleActiveYear(index)}>{year.year}</li>
+                    )
+                })}
+            </ul>
+            <div className={performanceTableStyles.tabContainer}>
+                <h3>{funds[selectedFund].node.frontmatter.fund_name}</h3>
+                {chartContent()}
+            </div>
+        </section>
+    )
+}
+
 // import React, { Component } from "react"
 // import { HorizontalBar } from "react-chartjs-2"
 // import { graphql, StaticQuery } from "gatsby"

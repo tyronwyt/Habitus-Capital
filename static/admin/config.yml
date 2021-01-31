@@ -123,7 +123,7 @@ collections:
 
   - name: perfomance_tables
     label: "Performance Tables"
-    folder: "site/content/performance"
+    folder: "site/content/performance/tables"
     create: true
     slug: "{{fund_name}}"
     fields:
@@ -138,18 +138,18 @@ collections:
             name: months
             widget: object
             fields:
-              - {name: percentage-01, label: Jan %, widget: number, default: 0}
-              - {name: percentage-02, label: Feb %, widget: number, default: 0}
-              - {name: percentage-03, label: Mar %, widget: number, default: 0}
-              - {name: percentage-04, label: Apr %, widget: number, default: 0}
-              - {name: percentage-05, label: May %, widget: number, default: 0}
-              - {name: percentage-06, label: Jun %, widget: number, default: 0}
-              - {name: percentage-07, label: Jul %, widget: number, default: 0}
-              - {name: percentage-08, label: Aug %, widget: number, default: 0}
-              - {name: percentage-09, label: Sep %, widget: number, default: 0}
-              - {name: percentage-10, label: Oct %, widget: number, default: 0}
-              - {name: percentage-11, label: Nov %, widget: number, default: 0}
-              - {name: percentage-12, label: Dec %, widget: number, default: 0}
+              - {name: percentage-1, label: Jan %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-2, label: Feb %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-3, label: Mar %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-4, label: Apr %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-5, label: May %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-6, label: Jun %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-7, label: Jul %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-8, label: Aug %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-9, label: Sep %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-10, label: Oct %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-11, label: Nov %, widget: number, value_type: "float", default: 0}
+              - {name: percentage-12, label: Dec %, widget: number, value_type: "float", default: 0}
 
   - name: contact
     label: "Contact Section"

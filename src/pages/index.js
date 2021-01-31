@@ -4,8 +4,8 @@ import Layout from "../components/layout"
 import Legacy from "../components/legacy"
 import Contact from "../components/contact"
 import Investing from "../components/investing"
-import Performance from "../components/performance"
 import Update from "../components/update"
+import PerformanceTable from "../components/performanceTable"
 
 class IndexPage extends Component {
     constructor() {
@@ -20,7 +20,7 @@ class IndexPage extends Component {
             <Layout>
                 <Legacy />
                 <Investing />
-                <Performance/>
+                <PerformanceTable/>
                 <Update />
                 <Contact />
             </Layout>
