@@ -2,6 +2,20 @@
 fund_name: Momentum Macro Fund
 year:
   - months:
+      percentage-3: 85.45
+      percentage-4: 66.13
+      percentage-5: 56.86
+      percentage-6: 39.45
+      percentage-7: -1.1
+      percentage-8: 2.5
+      percentage-9: -0.43
+      percentage-10: -11.5
+      percentage-11: 6.99
+      percentage-12: -1.6
+      percentage-1: 19.89
+      percentage-2: 25.57
+    year: 2020
+  - months:
       percentage-3: 0.18
       percentage-4: -9.25
       percentage-5: 24.6
