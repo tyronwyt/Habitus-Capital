@@ -12,7 +12,7 @@ year:
       percentage-10: 0
       percentage-11: 0
       percentage-12: 0
-      percentage-1: 0
+      percentage-1: 5.3
       percentage-2: 0
     year: 2021
   - months:
