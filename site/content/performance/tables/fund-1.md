@@ -13,7 +13,7 @@ year:
       percentage-11: 0
       percentage-12: 0
       percentage-1: -5.3
-      percentage-2: 0
+      percentage-2: 2.48
     year: 2021
   - months:
       percentage-3: 125.33
