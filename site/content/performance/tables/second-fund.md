@@ -2,7 +2,7 @@
 fund_name: Momentum Macro Fund
 year:
   - months:
-      percentage-3: 0
+      percentage-3: -2.52
       percentage-4: 0
       percentage-5: 0
       percentage-6: 0
