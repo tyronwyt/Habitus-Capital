@@ -2,8 +2,8 @@
 fund_name: Leveraged Futures Fund
 year:
   - months:
-      percentage-3: 0
-      percentage-4: 0
+      percentage-3: 1.38
+      percentage-4: -2
       percentage-5: 0
       percentage-6: 0
       percentage-7: 0
@@ -12,7 +12,7 @@ year:
       percentage-10: 0
       percentage-11: 0
       percentage-12: 0
-      percentage-1: -5.3
+      percentage-1: -5.16
       percentage-2: 2.48
     year: 2021
   - months:
