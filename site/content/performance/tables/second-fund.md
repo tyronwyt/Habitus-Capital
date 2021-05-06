@@ -26,7 +26,7 @@ year:
       percentage-10: -11.5
       percentage-11: 6.99
       percentage-12: -1.6
-      percentage-1: 19.89
+      percentage-1: 21.89
       percentage-2: 25.57
     year: 2020
   - months:
