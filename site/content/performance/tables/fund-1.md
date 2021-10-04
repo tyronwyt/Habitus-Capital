@@ -8,7 +8,7 @@ year:
       percentage-6: -0.12
       percentage-7: -0.06
       percentage-8: -0.18
-      percentage-9: 0
+      percentage-9: 1.79
       percentage-10: 0
       percentage-11: 0
       percentage-12: 0
