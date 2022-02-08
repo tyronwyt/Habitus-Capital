@@ -25,7 +25,7 @@ year:
       percentage-9: 8.31
       percentage-10: -8.61
       percentage-11: 9.94
-      percentage-12: 8
+      percentage-12: 12
       percentage-1: -8.64
       percentage-2: 5.98
     year: 2021
