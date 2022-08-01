@@ -2,18 +2,18 @@
 fund_name: Momentum Macro Fund
 year:
   - months:
-      percentage-3: 0
-      percentage-4: 0
-      percentage-5: 0
-      percentage-6: 0
-      percentage-7: 0
+      percentage-3: -0.1
+      percentage-4: 9.42
+      percentage-5: 5.73
+      percentage-6: 4.37
+      percentage-7: 2.42
       percentage-8: 0
       percentage-9: 0
       percentage-10: 0
       percentage-11: 0
       percentage-12: 0
-      percentage-1: 12.67
-      percentage-2: 0
+      percentage-1: 6.33
+      percentage-2: 8.84
     year: 2022
   - months:
       percentage-3: -2.52
