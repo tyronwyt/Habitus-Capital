@@ -11,7 +11,7 @@ year:
       percentage-9: 5.45
       percentage-10: 0.19
       percentage-11: 14.84
-      percentage-12: 0
+      percentage-12: -1.89
       percentage-1: 5.83
       percentage-2: 0.06
     year: 2022
