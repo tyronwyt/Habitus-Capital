@@ -2,6 +2,20 @@
 fund_name: Leveraged Futures Fund
 year:
   - months:
+      percentage-3: 5.66
+      percentage-4: -0.06
+      percentage-5: 0
+      percentage-6: 0
+      percentage-7: 0
+      percentage-8: 0
+      percentage-9: 0
+      percentage-10: 0
+      percentage-11: 0
+      percentage-12: 0
+      percentage-1: -2.6
+      percentage-2: -1.54
+    year: 2023
+  - months:
       percentage-3: -0.07
       percentage-4: -1.71
       percentage-5: 10.5
@@ -71,18 +85,4 @@ year:
       percentage-1: 0
       percentage-2: 67.95
     year: 2018
-  - months:
-      percentage-3: 5.66
-      percentage-4: -0.06
-      percentage-5: 0
-      percentage-6: 0
-      percentage-7: 0
-      percentage-8: 0
-      percentage-9: 0
-      percentage-10: 0
-      percentage-11: 0
-      percentage-12: 0
-      percentage-1: -2.6
-      percentage-2: -1.54
-    year: 2023
 ---
