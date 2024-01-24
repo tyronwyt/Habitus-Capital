@@ -4,12 +4,12 @@ year:
   - months:
       percentage-3: 5.66
       percentage-4: -0.06
-      percentage-5: 0
-      percentage-6: 0
-      percentage-7: 0
-      percentage-8: 0
-      percentage-9: 0
-      percentage-10: 0
+      percentage-5: 0.55
+      percentage-6: -0.3
+      percentage-7: 0.24
+      percentage-8: -0.06
+      percentage-9: 0.75
+      percentage-10: 2.6
       percentage-11: 0
       percentage-12: 0
       percentage-1: -2.6
