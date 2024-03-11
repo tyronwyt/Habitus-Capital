@@ -4,14 +4,14 @@ year:
   - months:
       percentage-3: 2.67
       percentage-4: -0.05
-      percentage-5: 0
-      percentage-6: 0
-      percentage-7: 0
-      percentage-8: 0
-      percentage-9: 0
-      percentage-10: 0
-      percentage-11: 0
-      percentage-12: 0
+      percentage-5: -3.37
+      percentage-6: -5.85
+      percentage-7: 3.38
+      percentage-8: 2.37
+      percentage-9: 11.3
+      percentage-10: 2.85
+      percentage-11: -0.31
+      percentage-12: -0.28
       percentage-1: -0.43
       percentage-2: -5.36
     year: 2023
