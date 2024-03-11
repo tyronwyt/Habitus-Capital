@@ -10,8 +10,8 @@ year:
       percentage-8: -0.06
       percentage-9: 0.75
       percentage-10: 2.6
-      percentage-11: 0
-      percentage-12: 0
+      percentage-11: -0.04
+      percentage-12: -0.63
       percentage-1: -2.6
       percentage-2: -1.54
     year: 2023
